@@ -55,13 +55,29 @@
 			isa = PBXGroup;
 			children = (
 				50350D10212AF93000E17C7E /* AppDelegate.swift */,
-				50350D12212AF93000E17C7E /* ViewController.swift */,
-				50350D14212AF93000E17C7E /* Main.storyboard */,
+				50350D23212AF99200E17C7E /* ViewControllers */,
+				50350D22212AF97F00E17C7E /* Storyboards */,
 				50350D17212AF93100E17C7E /* Assets.xcassets */,
-				50350D19212AF93100E17C7E /* LaunchScreen.storyboard */,
 				50350D1C212AF93100E17C7E /* Info.plist */,
 			);
 			path = PartyTime;
+			sourceTree = "<group>";
+		};
+		50350D22212AF97F00E17C7E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				50350D14212AF93000E17C7E /* Main.storyboard */,
+				50350D19212AF93100E17C7E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		50350D23212AF99200E17C7E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				50350D12212AF93000E17C7E /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
