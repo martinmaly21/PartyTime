@@ -13,6 +13,7 @@
 		50350D18212AF93100E17C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50350D17212AF93100E17C7E /* Assets.xcassets */; };
 		50350D1B212AF93100E17C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50350D19212AF93100E17C7E /* LaunchScreen.storyboard */; };
 		50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50350D26212AFF4700E17C7E /* GoogleService-Info.plist */; };
+		505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */; };
 		C35F2A357E89039A1CBBF56C /* Pods_PartyTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		50350D1A212AF93100E17C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50350D1C212AF93100E17C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50350D26212AFF4700E17C7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Regular_13131.ttf"; sourceTree = "<group>"; };
 		856E0F40641E4210E4E7B747 /* Pods-PartyTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +68,7 @@
 				50350D10212AF93000E17C7E /* AppDelegate.swift */,
 				50350D23212AF99200E17C7E /* ViewControllers */,
 				50350D22212AF97F00E17C7E /* Storyboards */,
+				505E87DE212C52A1008627C8 /* Fonts */,
 				50350D17212AF93100E17C7E /* Assets.xcassets */,
 				50350D1C212AF93100E17C7E /* Info.plist */,
 				50350D26212AFF4700E17C7E /* GoogleService-Info.plist */,
@@ -88,6 +91,14 @@
 				50350D12212AF93000E17C7E /* ViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		505E87DE212C52A1008627C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		587F99045279A62A6198EA72 /* Pods */ = {
@@ -171,6 +182,7 @@
 				50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */,
 				50350D18212AF93100E17C7E /* Assets.xcassets in Resources */,
 				50350D16212AF93000E17C7E /* Main.storyboard in Resources */,
+				505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
