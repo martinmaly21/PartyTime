@@ -55,12 +55,10 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - TweeTextField (1.3.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
-  - TweeTextField
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -74,7 +72,6 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - nanopb
-    - TweeTextField
 
 SPEC CHECKSUMS:
   Firebase: 75ea9e232eefa158c1049028030b8f661a2ccb62
@@ -87,8 +84,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  TweeTextField: 61bcc95baa5b632ee81e322f470aaee3e74bcfb5
 
-PODFILE CHECKSUM: f4d698322dab5953b940dfb4c663578c37309c58
+PODFILE CHECKSUM: 1a44404aaa6761596bf3f32b0b44c678b3887285
 
 COCOAPODS: 1.5.3

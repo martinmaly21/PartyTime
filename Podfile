@@ -8,5 +8,4 @@ target 'PartyTime' do
   # Pods for PartyTime
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-pod 'TweeTextField'
 end
