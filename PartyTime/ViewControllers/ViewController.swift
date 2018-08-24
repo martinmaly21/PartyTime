@@ -8,13 +8,19 @@
 
 import UIKit
 import FirebaseAuth
+import SwiftVideoBackground
+import Hero
 
 class ViewController: UIViewController {
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        try? VideoBackground.shared.play(view: view, videoName: "partylights", videoType: "mp4", isMuted: true, darkness: 0.5, willLoopVideo: true, setAudioSessionAmbient: true)
+    }
+    
    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("Created Martin's Branch")
+   
+    super.viewDidLoad()
+    
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7B50FC117919FC43D8FE34BD42F414DA"
+               BlueprintIdentifier = "71CEEE245D6357C36F821C3781B034BF"
                BuildableName = "Pods_PartyTime.framework"
                BlueprintName = "Pods-PartyTime"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7B50FC117919FC43D8FE34BD42F414DA"
+            BlueprintIdentifier = "71CEEE245D6357C36F821C3781B034BF"
             BuildableName = "Pods_PartyTime.framework"
             BlueprintName = "Pods-PartyTime"
             ReferencedContainer = "container:Pods.xcodeproj">

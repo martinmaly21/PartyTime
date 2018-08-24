@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501EADE821303B93004885AB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADE721303B93004885AB /* LogInViewController.swift */; };
+		501EADEE21304A29004885AB /* partylights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 501EADED21304A29004885AB /* partylights.mp4 */; };
+		501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADEF21304DD2004885AB /* Register1ViewController.swift */; };
 		502CE934212F88610068D64B /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502CE928212F88610068D64B /* YoshikoTextField.swift */; };
 		502CE935212F88610068D64B /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502CE92A212F88610068D64B /* HoshiTextField.swift */; };
 		502CE936212F88610068D64B /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502CE92B212F88610068D64B /* MinoruTextField.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		0D21DF5B8E42587DF0061E06 /* Pods-PartyTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.release.xcconfig"; sourceTree = "<group>"; };
 		11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		501EADE721303B93004885AB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = /Users/martinmaly/Desktop/PartyTime/PartyTime/ViewControllers/LogInViewController.swift; sourceTree = "<absolute>"; };
+		501EADED21304A29004885AB /* partylights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = partylights.mp4; sourceTree = "<group>"; };
+		501EADEF21304DD2004885AB /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register1ViewController.swift; path = PartyTime/ViewControllers/Register1ViewController.swift; sourceTree = SOURCE_ROOT; };
 		502CE928212F88610068D64B /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		502CE929212F88610068D64B /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		502CE92A212F88610068D64B /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
@@ -90,6 +96,7 @@
 		50350D04212AF93000E17C7E = {
 			isa = PBXGroup;
 			children = (
+				501EADED21304A29004885AB /* partylights.mp4 */,
 				502CE927212F88610068D64B /* TextFieldEffects */,
 				50350D0F212AF93000E17C7E /* PartyTime */,
 				50350D0E212AF93000E17C7E /* Products */,
@@ -133,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				50350D12212AF93000E17C7E /* ViewController.swift */,
+				501EADEF21304DD2004885AB /* Register1ViewController.swift */,
+				501EADE721303B93004885AB /* LogInViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -222,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501EADEE21304A29004885AB /* partylights.mp4 in Resources */,
 				50350D1B212AF93100E17C7E /* LaunchScreen.storyboard in Resources */,
 				50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */,
 				502CE93E212F88610068D64B /* Info.plist in Resources */,
@@ -243,12 +253,16 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftVideoBackground/SwiftVideoBackground.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftVideoBackground.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +301,10 @@
 				502CE93D212F88610068D64B /* IsaoTextField.swift in Sources */,
 				502CE93A212F88610068D64B /* MadokaTextField.swift in Sources */,
 				502CE939212F88610068D64B /* JiroTextField.swift in Sources */,
+				501EADE821303B93004885AB /* LogInViewController.swift in Sources */,
 				502CE936212F88610068D64B /* MinoruTextField.swift in Sources */,
 				502CE93B212F88610068D64B /* KaedeTextField.swift in Sources */,
+				501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */,
 				50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */,
 				502CE935212F88610068D64B /* HoshiTextField.swift in Sources */,
 				502CE937212F88610068D64B /* YokoTextField.swift in Sources */,

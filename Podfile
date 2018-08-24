@@ -8,6 +8,7 @@ target 'PartyTime' do
   # Pods for PartyTime
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-
+pod 'SwiftVideoBackground', '~> 3.0'
+pod 'Hero'
 
 end
