@@ -39,6 +39,21 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>ProfileImageView-ProfileImageView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>ProfileImageView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>TJProfileImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>nanopb.xcscheme</key>
 		<dict>
 			<key>isShown</key>
