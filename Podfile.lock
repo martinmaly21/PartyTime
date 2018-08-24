@@ -55,10 +55,12 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - TJProfileImage (0.2.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - TJProfileImage
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -72,6 +74,7 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMSessionFetcher
     - nanopb
+    - TJProfileImage
 
 SPEC CHECKSUMS:
   Firebase: 75ea9e232eefa158c1049028030b8f661a2ccb62
@@ -84,7 +87,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  TJProfileImage: 510c9fbdb378942e8814abb15e5ab28ac8db0b87
 
-PODFILE CHECKSUM: 1a44404aaa6761596bf3f32b0b44c678b3887285
+PODFILE CHECKSUM: 3cbd868b9a1282deb47ef74e691e3b37feebbeae
 
 COCOAPODS: 1.5.3
