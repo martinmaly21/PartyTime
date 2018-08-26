@@ -80,12 +80,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyh-oi-YQr" customClass="HoshiTextField" customModule="PartyTime" customModuleProvider="target">
-                                <rect key="frame" x="33" y="115" width="266" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-08-24 at 10.07.56 AM" translatesAutoresizingMaskIntoConstraints="NO" id="aIj-P5-dpy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyh-oi-YQr" customClass="HoshiTextField" customModule="PartyTime" customModuleProvider="target">
+                                <rect key="frame" x="10" y="170" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="zVu-Xi-eWk"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -97,15 +102,17 @@
                                         <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a8m-gb-rb2" customClass="HoshiTextField" customModule="PartyTime" customModuleProvider="target">
-                                <rect key="frame" x="33" y="236" width="266" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a8m-gb-rb2" customClass="HoshiTextField" customModule="PartyTime" customModuleProvider="target">
+                                <rect key="frame" x="10" y="270" width="355" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="5z1-wD-XAv"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -118,24 +125,53 @@
                                         <color key="value" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV6-UY-C6f">
-                                <rect key="frame" x="225" y="312" width="95" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Al-yA-qxz">
+                                <rect key="frame" x="16" y="637" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Forgot Password?">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV6-UY-C6f">
+                                <rect key="frame" x="226" y="365" width="95" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="HbL-lq-GSA" eventType="touchUpInside" id="y3Q-wX-uNd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iyh-oi-YQr" firstAttribute="leading" secondItem="ZWe-Vo-65V" secondAttribute="leading" constant="10" id="9Qv-Yd-u1t"/>
+                            <constraint firstItem="aIj-P5-dpy" firstAttribute="bottom" secondItem="ZWe-Vo-65V" secondAttribute="bottom" id="L8j-l9-5gb"/>
+                            <constraint firstItem="a8m-gb-rb2" firstAttribute="top" secondItem="iyh-oi-YQr" secondAttribute="bottom" constant="50" id="Wdg-k5-qun"/>
+                            <constraint firstItem="iyh-oi-YQr" firstAttribute="top" secondItem="ZWe-Vo-65V" secondAttribute="top" constant="150" id="WyE-WC-CJ1"/>
+                            <constraint firstItem="ZWe-Vo-65V" firstAttribute="trailing" secondItem="iyh-oi-YQr" secondAttribute="trailing" constant="10" id="YHl-ti-hkD"/>
+                            <constraint firstItem="aIj-P5-dpy" firstAttribute="trailing" secondItem="ZWe-Vo-65V" secondAttribute="trailing" id="gvL-s9-w4F"/>
+                            <constraint firstItem="a8m-gb-rb2" firstAttribute="leading" secondItem="ZWe-Vo-65V" secondAttribute="leading" constant="10" id="hVs-IY-TMT"/>
+                            <constraint firstItem="aIj-P5-dpy" firstAttribute="top" secondItem="wKh-Sx-lKT" secondAttribute="top" id="pPr-HC-epC"/>
+                            <constraint firstItem="ZWe-Vo-65V" firstAttribute="trailing" secondItem="a8m-gb-rb2" secondAttribute="trailing" constant="10" id="rCZ-uU-chh"/>
+                            <constraint firstItem="aIj-P5-dpy" firstAttribute="leading" secondItem="ZWe-Vo-65V" secondAttribute="leading" id="yaW-pl-Lap"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZWe-Vo-65V"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="iyh-oi-YQr" id="JOR-Lk-9wt"/>
+                        <outlet property="passwordTextField" destination="a8m-gb-rb2" id="GeY-3e-UYd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lDE-eH-JOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="-170"/>
+            <point key="canvasLocation" x="1437.5999999999999" y="-170.46476761619192"/>
         </scene>
         <!--Register1 View Controller-->
         <scene sceneID="7TB-9m-ks9">
@@ -145,12 +181,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-08-24 at 10.07.56 AM" translatesAutoresizingMaskIntoConstraints="NO" id="6Cn-km-G84">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSP-Co-q3T" customClass="HoshiTextField" customModule="PartyTime" customModuleProvider="target">
                                 <rect key="frame" x="16" y="76" width="266" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -170,7 +209,7 @@
                                 <rect key="frame" x="16" y="197" width="266" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -191,7 +230,7 @@
                                 <rect key="frame" x="16" y="282" width="266" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -208,14 +247,87 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2d-O1-JNJ">
+                                <rect key="frame" x="264" y="604" width="95" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerAccount:" destination="wAD-Bf-YTb" eventType="touchUpInside" id="hqx-rM-06x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Cn-km-G84" firstAttribute="leading" secondItem="TBL-UF-nL9" secondAttribute="leading" id="I5h-mu-bNr"/>
+                            <constraint firstItem="TBL-UF-nL9" firstAttribute="bottom" secondItem="6Cn-km-G84" secondAttribute="bottom" id="N7j-Ae-iom"/>
+                            <constraint firstItem="6Cn-km-G84" firstAttribute="trailing" secondItem="TBL-UF-nL9" secondAttribute="trailing" id="cjK-1c-Z7u"/>
+                            <constraint firstItem="6Cn-km-G84" firstAttribute="top" secondItem="03V-fT-3cU" secondAttribute="top" id="lLi-Ni-uVd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TBL-UF-nL9"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="fr8-Gk-YOW" id="7p5-wC-bE4"/>
+                        <outlet property="emailTextField" destination="GSP-Co-q3T" id="vrV-rc-CqB"/>
+                        <outlet property="passwordTextField" destination="I69-Od-iVi" id="eTV-mi-O1b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMl-mG-IJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="525"/>
+            <point key="canvasLocation" x="1437.5999999999999" y="524.8875562218891"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FgM-4d-RRH">
+            <objects>
+                <viewController id="KR5-3b-OMs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1iB-Nu-FdV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your University!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cp-L8-uky">
+                                <rect key="frame" x="66" y="20" width="243" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s5k-O0-Qqa">
+                                <rect key="frame" x="16" y="131" width="282" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-MF-QCP">
+                                <rect key="frame" x="329" y="131" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Find"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gS-pD-P6E">
+                                <rect key="frame" x="16" y="204" width="343" height="397"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cool collection view (above) with all University logos, and also search allows you to search for UNI." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKD-xE-KPJ">
+                                <rect key="frame" x="16" y="555" width="343" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="65u-xF-Qz3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iQx-sm-EvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="542.87856071964018"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2018-08-24 at 10.07.56 AM" width="690" height="1203"/>
+    </resources>
 </document>
