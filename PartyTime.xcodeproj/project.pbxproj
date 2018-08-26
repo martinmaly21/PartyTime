@@ -102,6 +102,7 @@
 			children = (
 				50350D10212AF93000E17C7E /* AppDelegate.swift */,
 				502F772721323FB400C81E81 /* AlertClass.swift */,
+				502F772521323C6700C81E81 /* UniversityEmailValidator.swift */,
 				50350D23212AF99200E17C7E /* ViewControllers */,
 				50350D22212AF97F00E17C7E /* Storyboards */,
 				505E87DE212C52A1008627C8 /* Fonts */,
@@ -126,7 +127,6 @@
 			children = (
 				50350D12212AF93000E17C7E /* ViewController.swift */,
 				501EADEF21304DD2004885AB /* Register1ViewController.swift */,
-				502F772521323C6700C81E81 /* UniversityEmailValidator.swift */,
 				501EADE721303B93004885AB /* LogInViewController.swift */,
 			);
 			path = ViewControllers;
