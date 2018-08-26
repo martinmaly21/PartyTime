@@ -12,6 +12,7 @@ import SwiftVideoBackground
 import Hero
 
 class ViewController: UIViewController {
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -21,13 +22,12 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     animatedBackground()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     @IBAction func signInButton(_ sender: Any) {
-        //TODO: Put code here if we want to perform any checks before user signs in.
     }
     
     @IBAction func registerButton(_ sender: Any) {
@@ -36,12 +36,24 @@ class ViewController: UIViewController {
     
     func animatedBackground() {
         do {
-            try VideoBackground.shared.play(view: view, videoName: "partylights", videoType: "mp4", isMuted: true, darkness: 0.5, willLoopVideo: true, setAudioSessionAmbient: true)
+            if Auth.auth().currentUser == nil {
+            try VideoBackground.shared.play(view: view, videoName: "partylights", videoType: "mp4", isMuted: true, darkness: 0.5, willLoopVideo: true, setAudioSessionAmbient: true) }
         } catch {
             print(error.localizedDescription)
         }
     }
     
+   override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    //Checking to see if user already has an account, and then automatically logging them in.
+    
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "mainToHome", sender: self)
+        }
+    }
+    
 }
+
+
 
 

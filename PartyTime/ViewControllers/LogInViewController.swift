@@ -7,7 +7,6 @@
 
 import UIKit
 import FirebaseAuth
-import SwiftVideoBackground
 
 
 class LogInViewController: UIViewController {
@@ -53,13 +52,20 @@ class LogInViewController: UIViewController {
         if email.isEmpty || password.isEmpty {
             throw LoginError.incompleteForm
             }
-        //Check to make sure password and email were correct. 
-        
-        
-         //Perform login featuers
+        //Check to make sure password and email were correct.
+         //Perform login features
+
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "logInToHome", sender: self)
+            }
+            if error != nil {
+            Alert.showBasictitle(title: "Error", message: "User failed to sign in. \(error!.localizedDescription)", vc: self)
+            }
         }
     
 
+}
 }
 
 /*

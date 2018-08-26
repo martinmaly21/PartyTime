@@ -57,8 +57,18 @@ class Register1ViewController: UIViewController {
         }
         
         //DO all firebase registering
+        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+            if user != nil && error == nil {
+                print("User created!")
+                self.performSegue(withIdentifier: "registerToHome", sender: self)
+            }
+            if error != nil {
+                Alert.showBasictitle(title: "Error", message: "User failed to sign in \(error!.localizedDescription)", vc: self)
+                }
+            }
+        }
         
-    }
+    
     
     @IBAction func registerAccount(_ sender: Any) {
         do {

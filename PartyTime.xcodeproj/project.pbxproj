@@ -10,6 +10,7 @@
 		501EADE821303B93004885AB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADE721303B93004885AB /* LogInViewController.swift */; };
 		501EADEE21304A29004885AB /* partylights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 501EADED21304A29004885AB /* partylights.mp4 */; };
 		501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADEF21304DD2004885AB /* Register1ViewController.swift */; };
+		502D8AF22132F96B006D7809 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8AF12132F96B006D7809 /* HomeViewController.swift */; };
 		502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F772521323C6700C81E81 /* UniversityEmailValidator.swift */; };
 		502F772821323FB400C81E81 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F772721323FB400C81E81 /* AlertClass.swift */; };
 		50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50350D10212AF93000E17C7E /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 		501EADE721303B93004885AB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = /Users/martinmaly/Desktop/PartyTime/PartyTime/ViewControllers/LogInViewController.swift; sourceTree = "<absolute>"; };
 		501EADED21304A29004885AB /* partylights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = partylights.mp4; sourceTree = "<group>"; };
 		501EADEF21304DD2004885AB /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register1ViewController.swift; path = PartyTime/ViewControllers/Register1ViewController.swift; sourceTree = SOURCE_ROOT; };
+		502D8AF12132F96B006D7809 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = PartyTime/ViewControllers/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		502F772521323C6700C81E81 /* UniversityEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEmailValidator.swift; sourceTree = "<group>"; };
 		502F772721323FB400C81E81 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		50350D0D212AF93000E17C7E /* PartyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +130,7 @@
 				50350D12212AF93000E17C7E /* ViewController.swift */,
 				501EADEF21304DD2004885AB /* Register1ViewController.swift */,
 				501EADE721303B93004885AB /* LogInViewController.swift */,
+				502D8AF12132F96B006D7809 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				50350D13212AF93000E17C7E /* ViewController.swift in Sources */,
 				50AE31832131C2BE009E81A3 /* JiroTextField.swift in Sources */,
 				50AE31812131C2BE009E81A3 /* YokoTextField.swift in Sources */,
+				502D8AF22132F96B006D7809 /* HomeViewController.swift in Sources */,
 				50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */,
 				501EADE821303B93004885AB /* LogInViewController.swift in Sources */,
 				50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */,
