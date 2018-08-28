@@ -26,10 +26,11 @@
 		FB88D940212FA06A00547911 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D935212FA06A00547911 /* TextFieldEffects.swift */; };
 		FB88D941212FA06A00547911 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D936212FA06A00547911 /* YokoTextField.swift */; };
 		FB88D942212FA06A00547911 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D937212FA06A00547911 /* YoshikoTextField.swift */; };
+		FB88D968213450A800547911 /* profileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D967213450A800547911 /* profileTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D21DF5B8E42587DF0061E06 /* Pods-PartyTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.release.xcconfig"; sourceTree = "<group>"; };
+		0D21DF5B8E42587DF0061E06 /* Pods-PartyTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.release.xcconfig"; path = "Pods/nanopb/Pods-PartyTime.release.xcconfig"; sourceTree = "<group>"; };
 		11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50350D0D212AF93000E17C7E /* PartyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50350D10212AF93000E17C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +41,7 @@
 		50350D1C212AF93100E17C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50350D26212AFF4700E17C7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Regular_13131.ttf"; sourceTree = "<group>"; };
-		856E0F40641E4210E4E7B747 /* Pods-PartyTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.debug.xcconfig"; sourceTree = "<group>"; };
+		856E0F40641E4210E4E7B747 /* Pods-PartyTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.debug.xcconfig"; path = "Pods/nanopb/Pods-PartyTime.debug.xcconfig"; sourceTree = "<group>"; };
 		FB88D92C212FA06A00547911 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		FB88D92D212FA06A00547911 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		FB88D92E212FA06A00547911 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		FB88D935212FA06A00547911 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		FB88D936212FA06A00547911 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
 		FB88D937212FA06A00547911 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		FB88D967213450A800547911 /* profileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = profileTab.swift; path = PartyTime/ViewControllers/profileTab.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				50350D12212AF93000E17C7E /* ViewController.swift */,
+				FB88D967213450A800547911 /* profileTab.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				50350D13212AF93000E17C7E /* ViewController.swift in Sources */,
 				FB88D93F212FA06A00547911 /* MinoruTextField.swift in Sources */,
 				FB88D93D212FA06A00547911 /* KaedeTextField.swift in Sources */,
+				FB88D968213450A800547911 /* profileTab.swift in Sources */,
 				FB88D942212FA06A00547911 /* YoshikoTextField.swift in Sources */,
 				FB88D940212FA06A00547911 /* TextFieldEffects.swift in Sources */,
 				50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */,

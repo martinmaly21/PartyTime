@@ -135,6 +135,19 @@
             </objects>
             <point key="canvasLocation" x="1439" y="-170"/>
         </scene>
+        <!--Profile Tab-->
+        <scene sceneID="Src-8b-QCe">
+            <objects>
+                <viewController id="Zbl-Kf-HEx" customClass="profileTab" customModule="PartyTime" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="e6d-3p-Bo6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dp2-L8-OqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2752.8000000000002" y="-166.8665667166417"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="7TB-9m-ks9">
             <objects>
