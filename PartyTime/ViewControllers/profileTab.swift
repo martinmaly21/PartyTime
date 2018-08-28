@@ -1,9 +1,8 @@
 //
 //  profileTab.swift
-//  PartyTime
+//  
 //
-//  Created by Ben McKeon on 2018-08-27.
-//  Copyright © 2018 Martin Maly. All rights reserved.
+//  Created by Ben McKeon on 2018-08-28.
 //
 
 import UIKit
@@ -22,10 +21,12 @@ class profileTab: UIViewController {
     }
     
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.destination is profileTab
-            else {return}
-        
-    }
+    
+    
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     guard segue.destination is profileTab
+     else {return}
+     
+     }
 
 }

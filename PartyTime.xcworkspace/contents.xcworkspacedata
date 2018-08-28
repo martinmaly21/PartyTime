@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/benmckeon/Documents/PartyTime/PartyTime/ViewControllers/profileTab.swift">
+   </FileRef>
+   <FileRef
       location = "group:PartyTime.xcodeproj">
    </FileRef>
    <FileRef

@@ -26,7 +26,8 @@
 		FB88D940212FA06A00547911 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D935212FA06A00547911 /* TextFieldEffects.swift */; };
 		FB88D941212FA06A00547911 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D936212FA06A00547911 /* YokoTextField.swift */; };
 		FB88D942212FA06A00547911 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D937212FA06A00547911 /* YoshikoTextField.swift */; };
-		FB88D968213450A800547911 /* profileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D967213450A800547911 /* profileTab.swift */; };
+		FB88D96A2135C6C600547911 /* profileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88D9692135C6C600547911 /* profileTab.swift */; };
+		FB88D96C2135CA9D00547911 /* campusQueens.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB88D96B2135CA9D00547911 /* campusQueens.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +55,8 @@
 		FB88D935212FA06A00547911 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		FB88D936212FA06A00547911 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
 		FB88D937212FA06A00547911 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
-		FB88D967213450A800547911 /* profileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = profileTab.swift; path = PartyTime/ViewControllers/profileTab.swift; sourceTree = SOURCE_ROOT; };
+		FB88D9692135C6C600547911 /* profileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = profileTab.swift; path = /Users/benmckeon/Documents/PartyTime/PartyTime/ViewControllers/profileTab.swift; sourceTree = "<absolute>"; };
+		FB88D96B2135CA9D00547911 /* campusQueens.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = campusQueens.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				50350D14212AF93000E17C7E /* Main.storyboard */,
 				50350D19212AF93100E17C7E /* LaunchScreen.storyboard */,
+				FB88D96B2135CA9D00547911 /* campusQueens.jpg */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -115,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				50350D12212AF93000E17C7E /* ViewController.swift */,
-				FB88D967213450A800547911 /* profileTab.swift */,
+				FB88D9692135C6C600547911 /* profileTab.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				FB88D93A212FA06A00547911 /* Info.plist in Resources */,
 				50350D18212AF93100E17C7E /* Assets.xcassets in Resources */,
 				50350D16212AF93000E17C7E /* Main.storyboard in Resources */,
+				FB88D96C2135CA9D00547911 /* campusQueens.jpg in Resources */,
 				505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +291,7 @@
 				50350D13212AF93000E17C7E /* ViewController.swift in Sources */,
 				FB88D93F212FA06A00547911 /* MinoruTextField.swift in Sources */,
 				FB88D93D212FA06A00547911 /* KaedeTextField.swift in Sources */,
-				FB88D968213450A800547911 /* profileTab.swift in Sources */,
+				FB88D96A2135C6C600547911 /* profileTab.swift in Sources */,
 				FB88D942212FA06A00547911 /* YoshikoTextField.swift in Sources */,
 				FB88D940212FA06A00547911 /* TextFieldEffects.swift in Sources */,
 				50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */,
