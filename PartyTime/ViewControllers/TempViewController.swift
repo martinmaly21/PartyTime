@@ -1,21 +1,22 @@
 //
-//  HomeViewController.swift
+//  TempViewController.swift
 //  PartyTime
 //
-//  Created by Martin Maly on 2018-08-26.
+//  Created by Martin Maly on 2018-08-28.
 //  Copyright © 2018 Martin Maly. All rights reserved.
 //
 
 import UIKit
 import FirebaseAuth
 
-class HomeViewController: UIViewController {
-    @IBAction func testLogOut(_ sender: Any) {
+class TempViewController: UIViewController {
+    @IBAction func tempButton(_ sender: Any) {
+     
         do {
-        try Auth.auth().signOut()
-            self.performSegue(withIdentifier: "backToHome", sender: self)
+            try Auth.auth().signOut()
+            self.performSegue(withIdentifier: "tempConnec", sender: self)
         } catch {
-            Alert.showBasictitle(title: "Error", message: "There was an error signing the user out: \(error.localizedDescription)" , vc: self)
+            Alert.showBasictitle(title: "Error", message: error.localizedDescription, vc: self)
         }
         
     }

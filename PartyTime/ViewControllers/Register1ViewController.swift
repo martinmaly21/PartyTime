@@ -19,6 +19,7 @@ class Register1ViewController: UIViewController {
         //MAYBE: CHECK FOR WIFI OR NOT??
      
     }
+        //TODO: Code for dismissing keyboard and adding return thing. 
 
     @IBOutlet weak var emailTextField: HoshiTextField!
     @IBOutlet weak var passwordTextField: HoshiTextField!
@@ -93,7 +94,7 @@ class Register1ViewController: UIViewController {
     }
     
     func validatePassword(candidate: String) -> Bool {
-        let passwordCheck = "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$"
+        let passwordCheck = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"
         return NSPredicate(format: "SELF MATCHES %@", passwordCheck).evaluate(with: candidate)
     }
     

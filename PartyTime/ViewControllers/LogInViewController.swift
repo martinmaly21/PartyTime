@@ -7,16 +7,19 @@
 
 import UIKit
 import FirebaseAuth
-
+import MBProgressHUD
 
 class LogInViewController: UIViewController {
-    
+
     enum LoginError: Error {
         case incompleteForm
         case incorrectPassword
         case incorrectEmail
         //Maybe no wifi
     }
+    
+    //TODO: Code for dismissing keyboard and adding return thing.
+    
     @IBOutlet weak var emailTextField: HoshiTextField!
     @IBOutlet weak var passwordTextField: HoshiTextField!
     
@@ -34,7 +37,8 @@ class LogInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loginButton(_ sender: Any) {
+    @IBAction func loginButton(_ sender: UIButton) {
+        
         do {
           try login()
             

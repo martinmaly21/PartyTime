@@ -10,7 +10,6 @@
 		501EADE821303B93004885AB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADE721303B93004885AB /* LogInViewController.swift */; };
 		501EADEE21304A29004885AB /* partylights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 501EADED21304A29004885AB /* partylights.mp4 */; };
 		501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADEF21304DD2004885AB /* Register1ViewController.swift */; };
-		502D8AF22132F96B006D7809 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8AF12132F96B006D7809 /* HomeViewController.swift */; };
 		502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F772521323C6700C81E81 /* UniversityEmailValidator.swift */; };
 		502F772821323FB400C81E81 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F772721323FB400C81E81 /* AlertClass.swift */; };
 		50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50350D10212AF93000E17C7E /* AppDelegate.swift */; };
@@ -20,6 +19,8 @@
 		50350D1B212AF93100E17C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50350D19212AF93100E17C7E /* LaunchScreen.storyboard */; };
 		50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50350D26212AFF4700E17C7E /* GoogleService-Info.plist */; };
 		505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */; };
+		50630F8C2134788E00297F1F /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */; };
+		50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */; };
 		50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31722131C2BE009E81A3 /* YoshikoTextField.swift */; };
 		50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31742131C2BE009E81A3 /* HoshiTextField.swift */; };
 		50AE31802131C2BE009E81A3 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31752131C2BE009E81A3 /* MinoruTextField.swift */; };
@@ -31,6 +32,7 @@
 		50AE31862131C2BE009E81A3 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */; };
 		50AE31872131C2BE009E81A3 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */; };
 		50AE31882131C2BE009E81A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50AE317D2131C2BE009E81A3 /* Info.plist */; };
+		50C60AB32135FD1F00D67840 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C60AB22135FD1F00D67840 /* TempViewController.swift */; };
 		C35F2A357E89039A1CBBF56C /* Pods_PartyTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +42,6 @@
 		501EADE721303B93004885AB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = /Users/martinmaly/Desktop/PartyTime/PartyTime/ViewControllers/LogInViewController.swift; sourceTree = "<absolute>"; };
 		501EADED21304A29004885AB /* partylights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = partylights.mp4; sourceTree = "<group>"; };
 		501EADEF21304DD2004885AB /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register1ViewController.swift; path = PartyTime/ViewControllers/Register1ViewController.swift; sourceTree = SOURCE_ROOT; };
-		502D8AF12132F96B006D7809 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = PartyTime/ViewControllers/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		502F772521323C6700C81E81 /* UniversityEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEmailValidator.swift; sourceTree = "<group>"; };
 		502F772721323FB400C81E81 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
 		50350D0D212AF93000E17C7E /* PartyTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +53,8 @@
 		50350D1C212AF93100E17C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50350D26212AFF4700E17C7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Regular_13131.ttf"; sourceTree = "<group>"; };
+		50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForHome.swift; sourceTree = "<group>"; };
 		50AE31722131C2BE009E81A3 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		50AE31732131C2BE009E81A3 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		50AE31742131C2BE009E81A3 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
 		50AE317D2131C2BE009E81A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C60AB22135FD1F00D67840 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		856E0F40641E4210E4E7B747 /* Pods-PartyTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,7 @@
 		50350D0F212AF93000E17C7E /* PartyTime */ = {
 			isa = PBXGroup;
 			children = (
+				50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */,
 				50350D10212AF93000E17C7E /* AppDelegate.swift */,
 				502F772721323FB400C81E81 /* AlertClass.swift */,
 				502F772521323C6700C81E81 /* UniversityEmailValidator.swift */,
@@ -130,7 +135,8 @@
 				50350D12212AF93000E17C7E /* ViewController.swift */,
 				501EADEF21304DD2004885AB /* Register1ViewController.swift */,
 				501EADE721303B93004885AB /* LogInViewController.swift */,
-				502D8AF12132F96B006D7809 /* HomeViewController.swift */,
+				50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */,
+				50C60AB22135FD1F00D67840 /* TempViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftVideoBackground/SwiftVideoBackground.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -270,6 +277,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftVideoBackground.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -305,17 +313,19 @@
 			files = (
 				50350D13212AF93000E17C7E /* ViewController.swift in Sources */,
 				50AE31832131C2BE009E81A3 /* JiroTextField.swift in Sources */,
+				50C60AB32135FD1F00D67840 /* TempViewController.swift in Sources */,
 				50AE31812131C2BE009E81A3 /* YokoTextField.swift in Sources */,
-				502D8AF22132F96B006D7809 /* HomeViewController.swift in Sources */,
 				50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */,
 				501EADE821303B93004885AB /* LogInViewController.swift in Sources */,
 				50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */,
 				50AE31852131C2BE009E81A3 /* KaedeTextField.swift in Sources */,
+				50630F8C2134788E00297F1F /* HomeCollectionViewController.swift in Sources */,
 				501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */,
 				50AE31862131C2BE009E81A3 /* AkiraTextField.swift in Sources */,
 				502F772821323FB400C81E81 /* AlertClass.swift in Sources */,
 				50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */,
 				502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */,
+				50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */,
 				50AE31842131C2BE009E81A3 /* MadokaTextField.swift in Sources */,
 				50AE31872131C2BE009E81A3 /* IsaoTextField.swift in Sources */,
 				50AE31802131C2BE009E81A3 /* MinoruTextField.swift in Sources */,
