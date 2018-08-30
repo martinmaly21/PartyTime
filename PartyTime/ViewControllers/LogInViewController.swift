@@ -4,7 +4,6 @@
 //
 //  Created by Martin Maly on 2018-08-24.
 //
-
 import UIKit
 import FirebaseAuth
 import MBProgressHUD

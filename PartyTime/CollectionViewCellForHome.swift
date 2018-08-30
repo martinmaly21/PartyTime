@@ -10,7 +10,4 @@ import UIKit
 
 class CollectionViewCellForHome: UICollectionViewCell {
     @IBOutlet weak var backGroundImage: UIImageView!
-    
-
-    
 }
