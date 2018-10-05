@@ -30,6 +30,7 @@
 		50630F8C2134788E00297F1F /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */; };
 		50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */; };
 		506C8E05213F2EA0005995DE /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */; };
+		508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */; };
 		50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31722131C2BE009E81A3 /* YoshikoTextField.swift */; };
 		50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31742131C2BE009E81A3 /* HoshiTextField.swift */; };
 		50AE31802131C2BE009E81A3 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31752131C2BE009E81A3 /* MinoruTextField.swift */; };
@@ -73,6 +74,7 @@
 		50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForHome.swift; sourceTree = "<group>"; };
 		506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Bold_13127.ttf"; sourceTree = "<group>"; };
 		50AE31722131C2BE009E81A3 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		50AE31732131C2BE009E81A3 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		50AE31742131C2BE009E81A3 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */,
+				508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				50350D18212AF93100E17C7E /* Assets.xcassets in Resources */,
 				50350D16212AF93000E17C7E /* Main.storyboard in Resources */,
 				505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */,
+				508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */,
 				50AE31882131C2BE009E81A3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

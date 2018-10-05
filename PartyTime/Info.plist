@@ -22,6 +22,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>DaxlinePro-Bold_13127.ttf</string>
 		<string>DaxlinePro-Regular_13131.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
