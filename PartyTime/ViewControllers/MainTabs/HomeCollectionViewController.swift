@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 
 class HomeCollectionViewController: UICollectionViewController {
@@ -19,6 +20,16 @@ class HomeCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //This is just to know which user is currently logged in. 
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                print("The current user is  \(user!.email!)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

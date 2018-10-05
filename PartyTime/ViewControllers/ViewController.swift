@@ -12,7 +12,7 @@ import SwiftVideoBackground
 import Hero
 
 class ViewController: UIViewController {
-    
+
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -23,9 +23,12 @@ class ViewController: UIViewController {
     animatedBackground()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        checkIfUserSignedIn()
+        //Checking to see if user already has an account, and then automatically logging them in.
     }
+    
     
     @IBAction func signInButton(_ sender: Any) {
     }
@@ -43,16 +46,12 @@ class ViewController: UIViewController {
         }
     }
     
-   override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-    //Checking to see if user already has an account, and then automatically logging them in.
-        if Auth.auth().currentUser != nil {
-            self.performSegue(withIdentifier: "mainToHome", sender: self)
+    func checkIfUserSignedIn() {
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                self.performSegue(withIdentifier: "mainToHome", sender: self)
+            }
         }
     }
-    
+
 }
-
-
-
-

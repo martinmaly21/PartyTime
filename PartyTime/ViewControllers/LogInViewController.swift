@@ -9,7 +9,9 @@ import FirebaseAuth
 import MBProgressHUD
 
 class LogInViewController: UIViewController {
-
+//I like idea of when both text fields are filled in, or atleast have some text in them, that the button changes from a lighter colour to a darker one. 
+    
+    
     enum LoginError: Error {
         case incompleteForm
         case incorrectPassword
