@@ -2,7 +2,7 @@
 //  Register7ViewController.swift
 //  PartyTime
 //
-//  Created by Martin Maly on 2018-08-29.
+//  Created by Martin Maly on 2018-10-05.
 //  Copyright © 2018 Martin Maly. All rights reserved.
 //
 

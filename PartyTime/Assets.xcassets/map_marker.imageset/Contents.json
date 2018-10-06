@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Screen Shot 2018-10-05 at 12.58.21 PM.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "map_marker@2x.png",
       "scale" : "2x"
     },
     {

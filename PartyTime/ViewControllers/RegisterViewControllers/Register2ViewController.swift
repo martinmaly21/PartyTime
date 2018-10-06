@@ -24,7 +24,7 @@ class Register2ViewController: UIViewController {
         //Write code so that user can not pick date ahead of today's date
         //Write code to ensure they're 19
         datePicker.setValue(UIColor.white, forKey: "textColor")
-        formatter.dateFormat = "MMMM dd, yyyy"
+        formatter.dateFormat = "MMMM d, yyyy"
         
         birthdayText.text = formatter.string(from: datePicker.date)
         // Do any additional setup after loading the view.

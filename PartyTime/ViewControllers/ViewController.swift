@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        checkIfUserSignedIn()
+        //checkIfUserSignedIn()
         //Checking to see if user already has an account, and then automatically logging them in.
     }
     
@@ -46,12 +46,14 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    /*
     func checkIfUserSignedIn() {
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if user != nil {
                 self.performSegue(withIdentifier: "mainToHome", sender: self)
             }
         }
-    }
+    } */
 
 }

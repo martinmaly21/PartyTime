@@ -18,14 +18,13 @@
 		50350D18212AF93100E17C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50350D17212AF93100E17C7E /* Assets.xcassets */; };
 		50350D1B212AF93100E17C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50350D19212AF93100E17C7E /* LaunchScreen.storyboard */; };
 		50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50350D26212AFF4700E17C7E /* GoogleService-Info.plist */; };
+		503DD9862167F7730083F8EF /* Register7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DD9852167F7730083F8EF /* Register7ViewController.swift */; };
+		503DD9882167FB7A0083F8EF /* Register8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DD9872167FB7A0083F8EF /* Register8ViewController.swift */; };
 		50502A52213754500025E014 /* Register2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A51213754500025E014 /* Register2ViewController.swift */; };
 		50502A54213754690025E014 /* Register3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A53213754690025E014 /* Register3ViewController.swift */; };
 		50502A56213754760025E014 /* Register4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A55213754760025E014 /* Register4ViewController.swift */; };
 		50502A58213754840025E014 /* Register5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A57213754840025E014 /* Register5ViewController.swift */; };
-		50502A5A213754920025E014 /* Register6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A59213754920025E014 /* Register6ViewController.swift */; };
-		50502A5C213754A90025E014 /* Register7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A5B213754A90025E014 /* Register7ViewController.swift */; };
-		50502A5E213754B80025E014 /* Register8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A5D213754B80025E014 /* Register8ViewController.swift */; };
-		50502A60213754C20025E014 /* Register9ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A5F213754C20025E014 /* Register9ViewController.swift */; };
+		50502A5C213754A90025E014 /* Register6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A5B213754A90025E014 /* Register6ViewController.swift */; };
 		505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */; };
 		50630F8C2134788E00297F1F /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */; };
 		50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */; };
@@ -42,7 +41,6 @@
 		50AE31862131C2BE009E81A3 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */; };
 		50AE31872131C2BE009E81A3 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */; };
 		50AE31882131C2BE009E81A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50AE317D2131C2BE009E81A3 /* Info.plist */; };
-		50C60AB32135FD1F00D67840 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C60AB22135FD1F00D67840 /* TempViewController.swift */; };
 		C35F2A357E89039A1CBBF56C /* Pods_PartyTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,14 +60,13 @@
 		50350D1A212AF93100E17C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50350D1C212AF93100E17C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50350D26212AFF4700E17C7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		503DD9852167F7730083F8EF /* Register7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register7ViewController.swift; sourceTree = "<group>"; };
+		503DD9872167FB7A0083F8EF /* Register8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register8ViewController.swift; sourceTree = "<group>"; };
 		50502A51213754500025E014 /* Register2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register2ViewController.swift; sourceTree = "<group>"; };
 		50502A53213754690025E014 /* Register3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register3ViewController.swift; sourceTree = "<group>"; };
 		50502A55213754760025E014 /* Register4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register4ViewController.swift; sourceTree = "<group>"; };
 		50502A57213754840025E014 /* Register5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register5ViewController.swift; sourceTree = "<group>"; };
-		50502A59213754920025E014 /* Register6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register6ViewController.swift; sourceTree = "<group>"; };
-		50502A5B213754A90025E014 /* Register7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register7ViewController.swift; sourceTree = "<group>"; };
-		50502A5D213754B80025E014 /* Register8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register8ViewController.swift; sourceTree = "<group>"; };
-		50502A5F213754C20025E014 /* Register9ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register9ViewController.swift; sourceTree = "<group>"; };
+		50502A5B213754A90025E014 /* Register6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register6ViewController.swift; sourceTree = "<group>"; };
 		505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Regular_13131.ttf"; sourceTree = "<group>"; };
 		50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForHome.swift; sourceTree = "<group>"; };
@@ -87,7 +84,6 @@
 		50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
 		50AE317D2131C2BE009E81A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50C60AB22135FD1F00D67840 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
 		856E0F40641E4210E4E7B747 /* Pods-PartyTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,10 +164,9 @@
 				50502A53213754690025E014 /* Register3ViewController.swift */,
 				50502A55213754760025E014 /* Register4ViewController.swift */,
 				50502A57213754840025E014 /* Register5ViewController.swift */,
-				50502A59213754920025E014 /* Register6ViewController.swift */,
-				50502A5B213754A90025E014 /* Register7ViewController.swift */,
-				50502A5D213754B80025E014 /* Register8ViewController.swift */,
-				50502A5F213754C20025E014 /* Register9ViewController.swift */,
+				50502A5B213754A90025E014 /* Register6ViewController.swift */,
+				503DD9852167F7730083F8EF /* Register7ViewController.swift */,
+				503DD9872167FB7A0083F8EF /* Register8ViewController.swift */,
 			);
 			path = RegisterViewControllers;
 			sourceTree = "<group>";
@@ -181,7 +176,6 @@
 			children = (
 				506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */,
 				50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */,
-				50C60AB22135FD1F00D67840 /* TempViewController.swift */,
 			);
 			path = MainTabs;
 			sourceTree = "<group>";
@@ -360,26 +354,24 @@
 			files = (
 				50502A56213754760025E014 /* Register4ViewController.swift in Sources */,
 				50350D13212AF93000E17C7E /* ViewController.swift in Sources */,
-				50502A60213754C20025E014 /* Register9ViewController.swift in Sources */,
 				50AE31832131C2BE009E81A3 /* JiroTextField.swift in Sources */,
-				50C60AB32135FD1F00D67840 /* TempViewController.swift in Sources */,
 				50AE31812131C2BE009E81A3 /* YokoTextField.swift in Sources */,
 				50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */,
 				501EADE821303B93004885AB /* LogInViewController.swift in Sources */,
 				50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */,
 				50502A54213754690025E014 /* Register3ViewController.swift in Sources */,
 				50AE31852131C2BE009E81A3 /* KaedeTextField.swift in Sources */,
-				50502A5E213754B80025E014 /* Register8ViewController.swift in Sources */,
 				50630F8C2134788E00297F1F /* HomeCollectionViewController.swift in Sources */,
+				503DD9882167FB7A0083F8EF /* Register8ViewController.swift in Sources */,
 				501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */,
 				50502A52213754500025E014 /* Register2ViewController.swift in Sources */,
 				50AE31862131C2BE009E81A3 /* AkiraTextField.swift in Sources */,
-				50502A5C213754A90025E014 /* Register7ViewController.swift in Sources */,
+				50502A5C213754A90025E014 /* Register6ViewController.swift in Sources */,
 				502F772821323FB400C81E81 /* AlertClass.swift in Sources */,
 				50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */,
+				503DD9862167F7730083F8EF /* Register7ViewController.swift in Sources */,
 				502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */,
 				50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */,
-				50502A5A213754920025E014 /* Register6ViewController.swift in Sources */,
 				50AE31842131C2BE009E81A3 /* MadokaTextField.swift in Sources */,
 				50AE31872131C2BE009E81A3 /* IsaoTextField.swift in Sources */,
 				50AE31802131C2BE009E81A3 /* MinoruTextField.swift in Sources */,
@@ -538,7 +530,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.martinmaly.PartyTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.martinmaly.PartyTime69;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,7 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.martinmaly.PartyTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.martinmaly.PartyTime69;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

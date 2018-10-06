@@ -2,7 +2,7 @@
 //  Register8ViewController.swift
 //  PartyTime
 //
-//  Created by Martin Maly on 2018-08-29.
+//  Created by Martin Maly on 2018-10-05.
 //  Copyright © 2018 Martin Maly. All rights reserved.
 //
 
@@ -12,9 +12,10 @@ class Register8ViewController: UIViewController {
     
     @IBOutlet weak var profileImageView: UIImageView!
     var imagePicker: UIImagePickerController!
-
-
-
+    
+    @IBOutlet weak var funnyLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker = UIImagePickerController()
@@ -24,7 +25,7 @@ class Register8ViewController: UIViewController {
         makeImageViewRound()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,7 +34,6 @@ class Register8ViewController: UIViewController {
     @IBAction func chooseImage(_ sender: Any) {
         self.present(imagePicker, animated: true, completion: nil)
     }
-    
     
     func makeImageViewRound() {
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2
@@ -54,7 +54,7 @@ extension Register8ViewController : UIImagePickerControllerDelegate, UINavigatio
             self.profileImageView.image = pickedImage
         }
         picker.dismiss(animated: true, completion: nil)
+        funnyLabel.text = "Looking good!"
     }
     
 }
-

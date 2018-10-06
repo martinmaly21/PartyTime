@@ -32,7 +32,7 @@ class ResetPasswordViewController: UIViewController {
         if emails != nil && emails?.isEmpty == false {
             Auth.auth().sendPasswordReset(withEmail: emails!) { (error) in
                 if error == nil {
-                    self.confirmationMessage.text = "A link to reset your password has been emailed to \(emails!)"
+                    self.confirmationMessage.text = "A link to reset your password has been emailed to \(emails!)."
                 } else {
                     Alert.showBasictitle(title: "Error", message: "Error: \(error!.localizedDescription)", vc: self)
                 }

@@ -12,7 +12,7 @@ import FirebaseAuth
 
 class HomeCollectionViewController: UICollectionViewController {
 
-    var array: [String] = ["MASSIVE BANGER ON ABERDEEN!", "BIG ASS PARTY ON JOHNSON", "PARTY ON UNIVERSITY - BYOB", "MASSIVE BANGER ON ABERDEEN!", "BIG ASS PARTY ON JOHNSON", "PARTY ON UNIVERSITY - BYOB"]
+    var array: [String] = ["234 Johnson St.", "320 Victoria St.", "847 Earl St.", "27 Aberdeen St.", "876 Alfred St.", "765 Division St."]
     
     var backgroundImageArray = ["1", "2", "3", "1", "2", "3"]
     
