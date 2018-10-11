@@ -8,7 +8,6 @@
 
 import UIKit
 import FirebaseAuth
-import SwiftVideoBackground
 import Hero
 
 class ViewController: UIViewController {
@@ -20,7 +19,6 @@ class ViewController: UIViewController {
     
    override func viewDidLoad() {
     super.viewDidLoad()
-    animatedBackground()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,14 +35,6 @@ class ViewController: UIViewController {
         //TODO: Put code here if we want to perform any checks before user registers.
     }
     
-    func animatedBackground() {
-        do {
-            if Auth.auth().currentUser == nil {
-            try VideoBackground.shared.play(view: view, videoName: "partylights", videoType: "mp4", isMuted: true, darkness: 0.5, willLoopVideo: true, setAudioSessionAmbient: true) }
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
     
     
     /*

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		501EADE821303B93004885AB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADE721303B93004885AB /* LogInViewController.swift */; };
-		501EADEE21304A29004885AB /* partylights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 501EADED21304A29004885AB /* partylights.mp4 */; };
 		501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADEF21304DD2004885AB /* Register1ViewController.swift */; };
 		502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F772521323C6700C81E81 /* UniversityEmailValidator.swift */; };
 		502F772821323FB400C81E81 /* AlertClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F772721323FB400C81E81 /* AlertClass.swift */; };
@@ -20,13 +19,15 @@
 		50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50350D26212AFF4700E17C7E /* GoogleService-Info.plist */; };
 		503DD9862167F7730083F8EF /* Register7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DD9852167F7730083F8EF /* Register7ViewController.swift */; };
 		503DD9882167FB7A0083F8EF /* Register8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DD9872167FB7A0083F8EF /* Register8ViewController.swift */; };
+		503F9F4F216ED7A1003C5386 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F9F4E216ED7A1003C5386 /* SideMenuViewController.swift */; };
+		503F9F53216ED7FC003C5386 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F9F52216ED7FC003C5386 /* HomeViewController.swift */; };
+		503F9F57216F2F47003C5386 /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F9F56216F2F47003C5386 /* CustomSegmentedControl.swift */; };
 		50502A52213754500025E014 /* Register2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A51213754500025E014 /* Register2ViewController.swift */; };
 		50502A54213754690025E014 /* Register3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A53213754690025E014 /* Register3ViewController.swift */; };
 		50502A56213754760025E014 /* Register4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A55213754760025E014 /* Register4ViewController.swift */; };
 		50502A58213754840025E014 /* Register5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A57213754840025E014 /* Register5ViewController.swift */; };
 		50502A5C213754A90025E014 /* Register6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A5B213754A90025E014 /* Register6ViewController.swift */; };
 		505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */; };
-		50630F8C2134788E00297F1F /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */; };
 		50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */; };
 		506C8E05213F2EA0005995DE /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */; };
 		508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */; };
@@ -40,7 +41,6 @@
 		50AE31852131C2BE009E81A3 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317A2131C2BE009E81A3 /* KaedeTextField.swift */; };
 		50AE31862131C2BE009E81A3 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */; };
 		50AE31872131C2BE009E81A3 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */; };
-		50AE31882131C2BE009E81A3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50AE317D2131C2BE009E81A3 /* Info.plist */; };
 		C35F2A357E89039A1CBBF56C /* Pods_PartyTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,6 @@
 		0D21DF5B8E42587DF0061E06 /* Pods-PartyTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.release.xcconfig"; sourceTree = "<group>"; };
 		11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		501EADE721303B93004885AB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = /Users/martinmaly/Desktop/PartyTime/PartyTime/ViewControllers/LogInViewController.swift; sourceTree = "<absolute>"; };
-		501EADED21304A29004885AB /* partylights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = partylights.mp4; sourceTree = "<group>"; };
 		501EADEF21304DD2004885AB /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register1ViewController.swift; path = PartyTime/ViewControllers/RegisterViewControllers/Register1ViewController.swift; sourceTree = SOURCE_ROOT; };
 		502F772521323C6700C81E81 /* UniversityEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEmailValidator.swift; sourceTree = "<group>"; };
 		502F772721323FB400C81E81 /* AlertClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertClass.swift; sourceTree = "<group>"; };
@@ -62,13 +61,15 @@
 		50350D26212AFF4700E17C7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		503DD9852167F7730083F8EF /* Register7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register7ViewController.swift; sourceTree = "<group>"; };
 		503DD9872167FB7A0083F8EF /* Register8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register8ViewController.swift; sourceTree = "<group>"; };
+		503F9F4E216ED7A1003C5386 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = PartyTime/ViewControllers/SideMenuViewController.swift; sourceTree = SOURCE_ROOT; };
+		503F9F52216ED7FC003C5386 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		503F9F56216F2F47003C5386 /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
 		50502A51213754500025E014 /* Register2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register2ViewController.swift; sourceTree = "<group>"; };
 		50502A53213754690025E014 /* Register3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register3ViewController.swift; sourceTree = "<group>"; };
 		50502A55213754760025E014 /* Register4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register4ViewController.swift; sourceTree = "<group>"; };
 		50502A57213754840025E014 /* Register5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register5ViewController.swift; sourceTree = "<group>"; };
 		50502A5B213754A90025E014 /* Register6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register6ViewController.swift; sourceTree = "<group>"; };
 		505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Regular_13131.ttf"; sourceTree = "<group>"; };
-		50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForHome.swift; sourceTree = "<group>"; };
 		506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Bold_13127.ttf"; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		50350D04212AF93000E17C7E = {
 			isa = PBXGroup;
 			children = (
-				501EADED21304A29004885AB /* partylights.mp4 */,
 				50AE31712131C2BD009E81A3 /* TextFieldEffects */,
 				50350D0F212AF93000E17C7E /* PartyTime */,
 				50350D0E212AF93000E17C7E /* Products */,
@@ -125,6 +125,7 @@
 				50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */,
 				50350D10212AF93000E17C7E /* AppDelegate.swift */,
 				502F772721323FB400C81E81 /* AlertClass.swift */,
+				503F9F56216F2F47003C5386 /* CustomSegmentedControl.swift */,
 				502F772521323C6700C81E81 /* UniversityEmailValidator.swift */,
 				50350D23212AF99200E17C7E /* ViewControllers */,
 				50350D22212AF97F00E17C7E /* Storyboards */,
@@ -150,6 +151,8 @@
 			children = (
 				501EADE721303B93004885AB /* LogInViewController.swift */,
 				50350D12212AF93000E17C7E /* ViewController.swift */,
+				506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */,
+				503F9F4E216ED7A1003C5386 /* SideMenuViewController.swift */,
 				50502A50213753EA0025E014 /* MainTabs */,
 				50502A4F213753C80025E014 /* RegisterViewControllers */,
 			);
@@ -174,8 +177,7 @@
 		50502A50213753EA0025E014 /* MainTabs */ = {
 			isa = PBXGroup;
 			children = (
-				506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */,
-				50630F8B2134788E00297F1F /* HomeCollectionViewController.swift */,
+				503F9F52216ED7FC003C5386 /* HomeViewController.swift */,
 			);
 			path = MainTabs;
 			sourceTree = "<group>";
@@ -259,6 +261,7 @@
 				TargetAttributes = {
 					50350D0C212AF93000E17C7E = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -285,14 +288,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501EADEE21304A29004885AB /* partylights.mp4 in Resources */,
 				50350D1B212AF93100E17C7E /* LaunchScreen.storyboard in Resources */,
 				50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */,
 				50350D18212AF93100E17C7E /* Assets.xcassets in Resources */,
 				50350D16212AF93000E17C7E /* Main.storyboard in Resources */,
 				505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */,
 				508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */,
-				50AE31882131C2BE009E81A3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,8 +310,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftVideoBackground/SwiftVideoBackground.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -318,8 +318,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftVideoBackground.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,9 +358,11 @@
 				50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */,
 				501EADE821303B93004885AB /* LogInViewController.swift in Sources */,
 				50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */,
+				503F9F57216F2F47003C5386 /* CustomSegmentedControl.swift in Sources */,
+				503F9F4F216ED7A1003C5386 /* SideMenuViewController.swift in Sources */,
 				50502A54213754690025E014 /* Register3ViewController.swift in Sources */,
+				503F9F53216ED7FC003C5386 /* HomeViewController.swift in Sources */,
 				50AE31852131C2BE009E81A3 /* KaedeTextField.swift in Sources */,
-				50630F8C2134788E00297F1F /* HomeCollectionViewController.swift in Sources */,
 				503DD9882167FB7A0083F8EF /* Register8ViewController.swift in Sources */,
 				501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */,
 				50502A52213754500025E014 /* Register2ViewController.swift in Sources */,
@@ -532,7 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.martinmaly.PartyTime69;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -552,7 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.martinmaly.PartyTime69;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
