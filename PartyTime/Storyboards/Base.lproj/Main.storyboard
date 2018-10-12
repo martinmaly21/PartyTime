@@ -909,7 +909,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybridFlyover" translatesAutoresizingMaskIntoConstraints="NO" id="bSd-7l-aSH">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="118" width="375" height="549"/>
                                 <connections>
                                     <outlet property="delegate" destination="KFX-df-UpC" id="ahr-vA-F63"/>
                                 </connections>
@@ -968,15 +968,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Plus_Button"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-yp-QSb">
+                                <rect key="frame" x="325" y="613" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="centerOnUserButton"/>
+                                <connections>
+                                    <action selector="centerOnUser:" destination="KFX-df-UpC" eventType="touchUpInside" id="LnR-k1-U5G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bSd-7l-aSH" firstAttribute="leading" secondItem="ju1-da-vCZ" secondAttribute="leading" id="1Wq-84-hEf"/>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="top" secondItem="ju1-da-vCZ" secondAttribute="top" id="MSf-cu-7Ai"/>
+                            <constraint firstItem="bSd-7l-aSH" firstAttribute="top" secondItem="ju1-da-vCZ" secondAttribute="top" constant="98" id="MSf-cu-7Ai"/>
                             <constraint firstItem="bSd-7l-aSH" firstAttribute="leading" secondItem="ju1-da-vCZ" secondAttribute="leading" id="QkV-rr-ENo"/>
                             <constraint firstItem="ju1-da-vCZ" firstAttribute="trailing" secondItem="bSd-7l-aSH" secondAttribute="trailing" id="bCq-JM-e87"/>
                             <constraint firstItem="ju1-da-vCZ" firstAttribute="bottom" secondItem="bSd-7l-aSH" secondAttribute="bottom" id="bqV-VJ-jJG"/>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="top" secondItem="ju1-da-vCZ" secondAttribute="top" id="c1I-E1-CM7"/>
+                            <constraint firstItem="bSd-7l-aSH" firstAttribute="top" secondItem="ju1-da-vCZ" secondAttribute="top" constant="98" id="c1I-E1-CM7"/>
                             <constraint firstItem="bSd-7l-aSH" firstAttribute="bottom" secondItem="ju1-da-vCZ" secondAttribute="bottom" id="g3j-7S-kuZ"/>
                             <constraint firstItem="bSd-7l-aSH" firstAttribute="trailing" secondItem="ju1-da-vCZ" secondAttribute="trailing" id="j3o-Jq-kZG"/>
                         </constraints>
@@ -1279,6 +1287,7 @@
         <image name="Plus_Button" width="456" height="456"/>
         <image name="Side_Bar_Button" width="283" height="259"/>
         <image name="background" width="375" height="667"/>
+        <image name="centerOnUserButton" width="238" height="237"/>
         <image name="house" width="800" height="756"/>
         <image name="profilePicTemplate" width="360" height="360"/>
         <image name="settingsGear" width="200" height="200"/>
@@ -1286,7 +1295,7 @@
         <image name="whitearrow" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U72-ls-HCE"/>
+        <segue reference="xO6-4G-MmM"/>
         <segue reference="4U6-ia-G19"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -31,16 +31,8 @@
 		50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */; };
 		506C8E05213F2EA0005995DE /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */; };
 		508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */; };
-		50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31722131C2BE009E81A3 /* YoshikoTextField.swift */; };
 		50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31742131C2BE009E81A3 /* HoshiTextField.swift */; };
-		50AE31802131C2BE009E81A3 /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31752131C2BE009E81A3 /* MinoruTextField.swift */; };
-		50AE31812131C2BE009E81A3 /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31762131C2BE009E81A3 /* YokoTextField.swift */; };
 		50AE31822131C2BE009E81A3 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31772131C2BE009E81A3 /* TextFieldEffects.swift */; };
-		50AE31832131C2BE009E81A3 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31782131C2BE009E81A3 /* JiroTextField.swift */; };
-		50AE31842131C2BE009E81A3 /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31792131C2BE009E81A3 /* MadokaTextField.swift */; };
-		50AE31852131C2BE009E81A3 /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317A2131C2BE009E81A3 /* KaedeTextField.swift */; };
-		50AE31862131C2BE009E81A3 /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */; };
-		50AE31872131C2BE009E81A3 /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */; };
 		C35F2A357E89039A1CBBF56C /* Pods_PartyTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,17 +65,9 @@
 		50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForHome.swift; sourceTree = "<group>"; };
 		506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Bold_13127.ttf"; sourceTree = "<group>"; };
-		50AE31722131C2BE009E81A3 /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		50AE31732131C2BE009E81A3 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
 		50AE31742131C2BE009E81A3 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
-		50AE31752131C2BE009E81A3 /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
-		50AE31762131C2BE009E81A3 /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
 		50AE31772131C2BE009E81A3 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
-		50AE31782131C2BE009E81A3 /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
-		50AE31792131C2BE009E81A3 /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
-		50AE317A2131C2BE009E81A3 /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
-		50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
-		50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
 		50AE317D2131C2BE009E81A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		856E0F40641E4210E4E7B747 /* Pods-PartyTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,17 +178,9 @@
 		50AE31712131C2BD009E81A3 /* TextFieldEffects */ = {
 			isa = PBXGroup;
 			children = (
-				50AE31722131C2BE009E81A3 /* YoshikoTextField.swift */,
 				50AE31732131C2BE009E81A3 /* TextFieldEffects.h */,
 				50AE31742131C2BE009E81A3 /* HoshiTextField.swift */,
-				50AE31752131C2BE009E81A3 /* MinoruTextField.swift */,
-				50AE31762131C2BE009E81A3 /* YokoTextField.swift */,
 				50AE31772131C2BE009E81A3 /* TextFieldEffects.swift */,
-				50AE31782131C2BE009E81A3 /* JiroTextField.swift */,
-				50AE31792131C2BE009E81A3 /* MadokaTextField.swift */,
-				50AE317A2131C2BE009E81A3 /* KaedeTextField.swift */,
-				50AE317B2131C2BE009E81A3 /* AkiraTextField.swift */,
-				50AE317C2131C2BE009E81A3 /* IsaoTextField.swift */,
 				50AE317D2131C2BE009E81A3 /* Info.plist */,
 			);
 			path = TextFieldEffects;
@@ -353,29 +329,21 @@
 			files = (
 				50502A56213754760025E014 /* Register4ViewController.swift in Sources */,
 				50350D13212AF93000E17C7E /* ViewController.swift in Sources */,
-				50AE31832131C2BE009E81A3 /* JiroTextField.swift in Sources */,
-				50AE31812131C2BE009E81A3 /* YokoTextField.swift in Sources */,
-				50AE317E2131C2BE009E81A3 /* YoshikoTextField.swift in Sources */,
 				501EADE821303B93004885AB /* LogInViewController.swift in Sources */,
 				50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */,
 				503F9F57216F2F47003C5386 /* CustomSegmentedControl.swift in Sources */,
 				503F9F4F216ED7A1003C5386 /* SideMenuViewController.swift in Sources */,
 				50502A54213754690025E014 /* Register3ViewController.swift in Sources */,
 				503F9F53216ED7FC003C5386 /* HomeViewController.swift in Sources */,
-				50AE31852131C2BE009E81A3 /* KaedeTextField.swift in Sources */,
 				503DD9882167FB7A0083F8EF /* Register8ViewController.swift in Sources */,
 				501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */,
 				50502A52213754500025E014 /* Register2ViewController.swift in Sources */,
-				50AE31862131C2BE009E81A3 /* AkiraTextField.swift in Sources */,
 				50502A5C213754A90025E014 /* Register6ViewController.swift in Sources */,
 				502F772821323FB400C81E81 /* AlertClass.swift in Sources */,
 				50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */,
 				503DD9862167F7730083F8EF /* Register7ViewController.swift in Sources */,
 				502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */,
 				50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */,
-				50AE31842131C2BE009E81A3 /* MadokaTextField.swift in Sources */,
-				50AE31872131C2BE009E81A3 /* IsaoTextField.swift in Sources */,
-				50AE31802131C2BE009E81A3 /* MinoruTextField.swift in Sources */,
 				50AE31822131C2BE009E81A3 /* TextFieldEffects.swift in Sources */,
 				50502A58213754840025E014 /* Register5ViewController.swift in Sources */,
 				506C8E05213F2EA0005995DE /* ResetPasswordViewController.swift in Sources */,

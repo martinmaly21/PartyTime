@@ -68,6 +68,7 @@ class CustomSegmentedControl: UIView {
             let button = UIButton(type: .system)
             
             button.setTitle(buttonTitle, for: .normal)
+            button.titleLabel?.font = UIFont(name: "DaxlinePro-Regular", size: 15)
             button.setTitleColor(textColour, for: .normal)
             
             button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
@@ -109,7 +110,7 @@ class CustomSegmentedControl: UIView {
             
             if btn == button {
                 let selectorStartPosition = frame.width / CGFloat(buttons.count) * CGFloat(buttonIndex)
-                UIView.animate(withDuration: 0.2, animations: {
+                UIView.animate(withDuration: 0.5, animations: {
                     self.selector.frame.origin.x = selectorStartPosition
                 })
                 

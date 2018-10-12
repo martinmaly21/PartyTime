@@ -11,15 +11,21 @@ import CoreLocation
 
 class HomeViewController: UIViewController {
     
-
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
+    let queensCoordinate = CLLocationCoordinate2D(latitude: 44.226233, longitude: -76.495609)
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     let regionInMeters = CLLocationDistance(1000)
     var previousLocation: CLLocation?
+    
+    
+    @IBAction func centerOnUser(_ sender: Any) {
+        //TODO: center on user
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,32 +47,44 @@ class HomeViewController: UIViewController {
     func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        
     }
     
     func centerViewOnUserLocation() {
-        //Code to center the view on the user's current location
+            //Code to center the view on the user's current location
         
-        mapView.mapType = .standard
-        mapView.showsBuildings = true
-        mapView.showsCompass = false
-        
+            mapView.mapType = .standard
+            mapView.showsBuildings = true
+            mapView.showsCompass = false
+            mapView.isPitchEnabled = false
+            mapView.isRotateEnabled = false
     
-        if let location = locationManager.location?.coordinate {
+            if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-           
             mapView.setRegion(region, animated: true)
             let mapCamera = MKMapCamera()
             mapCamera.centerCoordinate = location
-            mapCamera.pitch = 45
-            mapCamera.altitude = 2000
+            mapCamera.pitch = 80.0
+            mapCamera.altitude = 400
+            //Write code to direct heading between the coordinate (longitude, latitude) of user's location,
+            //and coordinates of queen's uni center.
+            mapCamera.heading = pointAtQueens(A: location, B: queensCoordinate)
             mapView.camera = mapCamera
-      
         }
-        
-        
-        
-        
+    }
+    
+    func pointAtQueens(A: CLLocationCoordinate2D, B: CLLocationCoordinate2D) -> CLLocationDirection {
+        //This function returns a value (double) which is the degree value from facing the first paramater to the second
+        var pointToQueens: CLLocationDirection
+        let userLatitude = A.latitude * (Double.pi/180)
+        let userLongitude = A.longitude * (Double.pi/180)
+        let queensLatitude = B.latitude * (Double.pi/180)
+        let queensLongitude = B.longitude * (Double.pi/180)
+        //Formula found online to convert from longitude/latitude to degree value
+        //https://www.igismap.com/formula-to-find-bearing-or-heading-angle-between-two-points-latitude-longitude/
+        let X = cos(queensLatitude) * sin(queensLongitude - userLongitude)
+        let Y = cos(userLatitude)   * sin(queensLatitude) - sin(userLatitude) * cos(queensLatitude) * cos(queensLongitude - userLongitude)
+        pointToQueens = Double(atan2(X, Y)) * (180 / Double.pi)
+        return pointToQueens
     }
     
     func checkLocationAuthorization() {
@@ -98,7 +116,6 @@ class HomeViewController: UIViewController {
     
     
     func startTrackingUsersLocation() {
-
         mapView.showsUserLocation = true
         centerViewOnUserLocation()
         previousLocation = getCenterLocationmapv(for: mapView)
