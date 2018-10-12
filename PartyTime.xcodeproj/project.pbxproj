@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50158C9C217130F9004679EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50158C9B217130F9004679EF /* GoogleService-Info.plist */; };
 		501EADE821303B93004885AB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADE721303B93004885AB /* LogInViewController.swift */; };
 		501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADEF21304DD2004885AB /* Register1ViewController.swift */; };
 		502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502F772521323C6700C81E81 /* UniversityEmailValidator.swift */; };
@@ -16,7 +17,6 @@
 		50350D16212AF93000E17C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50350D14212AF93000E17C7E /* Main.storyboard */; };
 		50350D18212AF93100E17C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50350D17212AF93100E17C7E /* Assets.xcassets */; };
 		50350D1B212AF93100E17C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50350D19212AF93100E17C7E /* LaunchScreen.storyboard */; };
-		50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50350D26212AFF4700E17C7E /* GoogleService-Info.plist */; };
 		503DD9862167F7730083F8EF /* Register7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DD9852167F7730083F8EF /* Register7ViewController.swift */; };
 		503DD9882167FB7A0083F8EF /* Register8ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503DD9872167FB7A0083F8EF /* Register8ViewController.swift */; };
 		503F9F4F216ED7A1003C5386 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F9F4E216ED7A1003C5386 /* SideMenuViewController.swift */; };
@@ -28,7 +28,6 @@
 		50502A58213754840025E014 /* Register5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A57213754840025E014 /* Register5ViewController.swift */; };
 		50502A5C213754A90025E014 /* Register6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50502A5B213754A90025E014 /* Register6ViewController.swift */; };
 		505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */; };
-		50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */; };
 		506C8E05213F2EA0005995DE /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */; };
 		508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */; };
 		50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31742131C2BE009E81A3 /* HoshiTextField.swift */; };
@@ -39,6 +38,7 @@
 /* Begin PBXFileReference section */
 		0D21DF5B8E42587DF0061E06 /* Pods-PartyTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.release.xcconfig"; sourceTree = "<group>"; };
 		11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50158C9B217130F9004679EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		501EADE721303B93004885AB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = /Users/martinmaly/Desktop/PartyTime/PartyTime/ViewControllers/LogInViewController.swift; sourceTree = "<absolute>"; };
 		501EADEF21304DD2004885AB /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register1ViewController.swift; path = PartyTime/ViewControllers/RegisterViewControllers/Register1ViewController.swift; sourceTree = SOURCE_ROOT; };
 		502F772521323C6700C81E81 /* UniversityEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityEmailValidator.swift; sourceTree = "<group>"; };
@@ -50,7 +50,6 @@
 		50350D17212AF93100E17C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50350D1A212AF93100E17C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50350D1C212AF93100E17C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50350D26212AFF4700E17C7E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		503DD9852167F7730083F8EF /* Register7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register7ViewController.swift; sourceTree = "<group>"; };
 		503DD9872167FB7A0083F8EF /* Register8ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register8ViewController.swift; sourceTree = "<group>"; };
 		503F9F4E216ED7A1003C5386 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = PartyTime/ViewControllers/SideMenuViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -62,7 +61,6 @@
 		50502A57213754840025E014 /* Register5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register5ViewController.swift; sourceTree = "<group>"; };
 		50502A5B213754A90025E014 /* Register6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register6ViewController.swift; sourceTree = "<group>"; };
 		505E87DF212C52E9008627C8 /* DaxlinePro-Regular_13131.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Regular_13131.ttf"; sourceTree = "<group>"; };
-		50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellForHome.swift; sourceTree = "<group>"; };
 		506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaxlinePro-Bold_13127.ttf"; sourceTree = "<group>"; };
 		50AE31732131C2BE009E81A3 /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 		50350D0F212AF93000E17C7E /* PartyTime */ = {
 			isa = PBXGroup;
 			children = (
-				50630F8D2134C82700297F1F /* CollectionViewCellForHome.swift */,
 				50350D10212AF93000E17C7E /* AppDelegate.swift */,
 				502F772721323FB400C81E81 /* AlertClass.swift */,
 				503F9F56216F2F47003C5386 /* CustomSegmentedControl.swift */,
@@ -116,7 +113,7 @@
 				505E87DE212C52A1008627C8 /* Fonts */,
 				50350D17212AF93100E17C7E /* Assets.xcassets */,
 				50350D1C212AF93100E17C7E /* Info.plist */,
-				50350D26212AFF4700E17C7E /* GoogleService-Info.plist */,
+				50158C9B217130F9004679EF /* GoogleService-Info.plist */,
 			);
 			path = PartyTime;
 			sourceTree = "<group>";
@@ -265,11 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50350D1B212AF93100E17C7E /* LaunchScreen.storyboard in Resources */,
-				50350D27212AFF4700E17C7E /* GoogleService-Info.plist in Resources */,
 				50350D18212AF93100E17C7E /* Assets.xcassets in Resources */,
 				50350D16212AF93000E17C7E /* Main.storyboard in Resources */,
 				505E87E0212C5308008627C8 /* DaxlinePro-Regular_13131.ttf in Resources */,
 				508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */,
+				50158C9C217130F9004679EF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +340,6 @@
 				50350D11212AF93000E17C7E /* AppDelegate.swift in Sources */,
 				503DD9862167F7730083F8EF /* Register7ViewController.swift in Sources */,
 				502F772621323C6700C81E81 /* UniversityEmailValidator.swift in Sources */,
-				50630F8E2134C82700297F1F /* CollectionViewCellForHome.swift in Sources */,
 				50AE31822131C2BE009E81A3 /* TextFieldEffects.swift in Sources */,
 				50502A58213754840025E014 /* Register5ViewController.swift in Sources */,
 				506C8E05213F2EA0005995DE /* ResetPasswordViewController.swift in Sources */,

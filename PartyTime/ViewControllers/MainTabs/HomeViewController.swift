@@ -10,6 +10,11 @@ import MapKit
 import CoreLocation
 
 class HomeViewController: UIViewController {
+
+    enum buttonPress {
+        case map
+        case list
+    }
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -17,15 +22,54 @@ class HomeViewController: UIViewController {
     
     let queensCoordinate = CLLocationCoordinate2D(latitude: 44.226233, longitude: -76.495609)
     @IBOutlet weak var mapView: MKMapView!
+    var listView: UITableView!
     let locationManager = CLLocationManager()
     let regionInMeters = CLLocationDistance(1000)
     var previousLocation: CLLocation?
+    var lastPressedSegment: buttonPress = .map
+    @IBOutlet weak var custNavBar: UIView!
+   
     
     
     @IBAction func centerOnUser(_ sender: Any) {
         //TODO: center on user
+
     }
     
+   
+    @IBAction func customSegmentValueChanged(_ sender: CustomSegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            if lastPressedSegment == .map {
+                break
+            } else {
+                
+                self.listView.removeFromSuperview()
+               
+                
+                
+            lastPressedSegment = .map
+            break
+            }
+            
+        case 1:
+            if lastPressedSegment == .list {
+            break
+            } else {
+      
+                self.setUpListView()
+    
+            lastPressedSegment = .list
+            break
+            }
+
+        default:
+        //code will not execute
+        break
+        }
+    }
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +77,14 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func setUpListView() {
+        //EVENTUALLY THIS WILL BE CHANGED INTO A COLLECTION VIEW, FOR NOW IT'S OKAY
+          listView = UITableView(frame: CGRect(x: 0, y: view.frame.height - mapView.frame.height, width: view.frame.width, height: mapView.frame.height))
+            listView.backgroundColor = UIColor.lightGray
+            listView.separatorColor = UIColor.white
+            view.addSubview(listView)
+    }
+
     func checkLocationServices() {
         //Check if system-wide location services are enabled
         if CLLocationManager.locationServicesEnabled() {
@@ -51,12 +103,12 @@ class HomeViewController: UIViewController {
     
     func centerViewOnUserLocation() {
             //Code to center the view on the user's current location
-        
             mapView.mapType = .standard
             mapView.showsBuildings = true
             mapView.showsCompass = false
             mapView.isPitchEnabled = false
             mapView.isRotateEnabled = false
+        
     
             if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion.init(center: location, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
@@ -96,7 +148,9 @@ class HomeViewController: UIViewController {
         case .authorizedWhenInUse:
             //This is what we want! Basically, the user has enabled location services for 'PartyTime' whenever the app is running.
             //Thus, run code to show user on the map.
+
             startTrackingUsersLocation()
+            
 //            locationManager.startUpdatingLocation()
             break
         case .denied:
@@ -118,25 +172,20 @@ class HomeViewController: UIViewController {
     func startTrackingUsersLocation() {
         mapView.showsUserLocation = true
         centerViewOnUserLocation()
-        previousLocation = getCenterLocationmapv(for: mapView)
+       // previousLocation = getCenterLocationmapv(for: mapView)
         
     }
     
     
-    
-    
-    
-    
-   func getCenterLocationmapv(for mapView: MKMapView) -> CLLocation {
-    
-        let latitude = mapView.centerCoordinate.latitude
-        let longitude = mapView.centerCoordinate.longitude
-    
-    return CLLocation(latitude: latitude,longitude: longitude)
-    
-    }
-    
-    
+//   func getCenterLocationmapv(for mapView: MKMapView) -> CLLocation {
+//
+//        let latitude = mapView.centerCoordinate.latitude
+//        let longitude = mapView.centerCoordinate.longitude
+//
+//    return CLLocation(latitude: latitude,longitude: longitude)
+//
+//    }
+
     
 }
 
@@ -155,6 +204,7 @@ extension HomeViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         //This function is called whenever the authorization permission changes
         //Thus we once again check the location authorization with the function we wrote previously.
+
         checkLocationAuthorization()
     }
     

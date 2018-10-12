@@ -908,14 +908,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybridFlyover" translatesAutoresizingMaskIntoConstraints="NO" id="bSd-7l-aSH">
-                                <rect key="frame" x="0.0" y="118" width="375" height="549"/>
-                                <connections>
-                                    <outlet property="delegate" destination="KFX-df-UpC" id="ahr-vA-F63"/>
-                                </connections>
-                            </mapView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jhT-St-3mT">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-7b-yiK">
@@ -959,15 +953,13 @@
                                                 <color key="value" cyan="0.86357545849999995" magenta="0.71482300759999995" yellow="0.47946059699999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customSegmentValueChanged:" destination="KFX-df-UpC" eventType="valueChanged" id="02n-GZ-UIZ"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-KE-Ewd">
-                                <rect key="frame" x="156" y="584" width="63" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Plus_Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPW-yp-QSb">
                                 <rect key="frame" x="325" y="613" width="34" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -976,23 +968,23 @@
                                     <action selector="centerOnUser:" destination="KFX-df-UpC" eventType="touchUpInside" id="LnR-k1-U5G"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-KE-Ewd">
+                                <rect key="frame" x="156" y="577" width="63" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Plus_Button"/>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ieB-7r-Cts">
+                                <rect key="frame" x="0.0" y="121" width="375" height="546"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="leading" secondItem="ju1-da-vCZ" secondAttribute="leading" id="1Wq-84-hEf"/>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="top" secondItem="ju1-da-vCZ" secondAttribute="top" constant="98" id="MSf-cu-7Ai"/>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="leading" secondItem="ju1-da-vCZ" secondAttribute="leading" id="QkV-rr-ENo"/>
-                            <constraint firstItem="ju1-da-vCZ" firstAttribute="trailing" secondItem="bSd-7l-aSH" secondAttribute="trailing" id="bCq-JM-e87"/>
-                            <constraint firstItem="ju1-da-vCZ" firstAttribute="bottom" secondItem="bSd-7l-aSH" secondAttribute="bottom" id="bqV-VJ-jJG"/>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="top" secondItem="ju1-da-vCZ" secondAttribute="top" constant="98" id="c1I-E1-CM7"/>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="bottom" secondItem="ju1-da-vCZ" secondAttribute="bottom" id="g3j-7S-kuZ"/>
-                            <constraint firstItem="bSd-7l-aSH" firstAttribute="trailing" secondItem="ju1-da-vCZ" secondAttribute="trailing" id="j3o-Jq-kZG"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ju1-da-vCZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="PartyTime" largeTitleDisplayMode="always" id="DAe-CP-1mg"/>
                     <connections>
-                        <outlet property="mapView" destination="bSd-7l-aSH" id="TYl-yS-8lU"/>
+                        <outlet property="custNavBar" destination="jhT-St-3mT" id="KXA-yG-BVB"/>
+                        <outlet property="mapView" destination="ieB-7r-Cts" id="m42-DU-dKV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIv-9T-Ejg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1295,7 +1287,7 @@
         <image name="whitearrow" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xO6-4G-MmM"/>
+        <segue reference="U72-ls-HCE"/>
         <segue reference="4U6-ia-G19"/>
     </inferredMetricsTieBreakers>
 </document>

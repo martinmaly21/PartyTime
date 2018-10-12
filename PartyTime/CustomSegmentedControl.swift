@@ -10,9 +10,10 @@ import UIKit
 
 //@IBDesignables allows you to see your changes right there on the StoryBoard
 @IBDesignable
-class CustomSegmentedControl: UIView {
+class CustomSegmentedControl: UIControl {
     var buttons = [UIButton]()
     var selector: UIView!
+    var selectedSegmentIndex = 0
 //@IBInspectable means whatever property comes next you will be able to see in attribute inspector (storyboard)
 @IBInspectable
     var borderWidth: CGFloat = 0 {
@@ -68,7 +69,7 @@ class CustomSegmentedControl: UIView {
             let button = UIButton(type: .system)
             
             button.setTitle(buttonTitle, for: .normal)
-            button.titleLabel?.font = UIFont(name: "DaxlinePro-Regular", size: 15)
+            button.titleLabel?.font = UIFont(name: "DaxlinePro-Regular", size: 18)
             button.setTitleColor(textColour, for: .normal)
             
             button.addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
@@ -109,10 +110,12 @@ class CustomSegmentedControl: UIView {
             btn.setTitleColor(textColour, for: .normal)
             
             if btn == button {
+                selectedSegmentIndex = buttonIndex
                 let selectorStartPosition = frame.width / CGFloat(buttons.count) * CGFloat(buttonIndex)
-                UIView.animate(withDuration: 0.5, animations: {
+
+                UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
                     self.selector.frame.origin.x = selectorStartPosition
-                })
+                }, completion: nil)
                 
                 btn.setTitleColor(selectorTextColour, for: .normal)
         
@@ -121,7 +124,8 @@ class CustomSegmentedControl: UIView {
         
         
     }
-    
+        sendActions(for: .valueChanged)
+        
     }
     
 }

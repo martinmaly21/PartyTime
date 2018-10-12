@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>605601681109-icq8n56a2du4g4tmhb7at19g6s5p30us.apps.googleusercontent.com</string>
+	<string>605601681109-raa3rfm8ukggjvtk43q245ofoj568bqt.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.605601681109-icq8n56a2du4g4tmhb7at19g6s5p30us</string>
+	<string>com.googleusercontent.apps.605601681109-raa3rfm8ukggjvtk43q245ofoj568bqt</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB-_ggMiuuEjFnZ_A2d4CmbHXP5k_vi-hI</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.martinmaly.PartyTime</string>
+	<string>com.martinmaly.PartyTime69</string>
 	<key>PROJECT_ID</key>
 	<string>partytime-c2b9a</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:605601681109:ios:3c394fdce16fe45e</string>
+	<string>1:605601681109:ios:c95e4e0e24add4bd</string>
 	<key>DATABASE_URL</key>
 	<string>https://partytime-c2b9a.firebaseio.com</string>
 </dict>
