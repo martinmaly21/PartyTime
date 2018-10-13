@@ -55,7 +55,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="gLa-Y0-F6m">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteHouse" translatesAutoresizingMaskIntoConstraints="NO" id="gLa-Y0-F6m">
                                 <rect key="frame" x="120" y="52" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -167,7 +167,7 @@
                                     <action selector="loginButton:" destination="HbL-lq-GSA" eventType="touchUpInside" id="y3Q-wX-uNd"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="NR5-Lm-dAa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteHouse" translatesAutoresizingMaskIntoConstraints="NO" id="NR5-Lm-dAa">
                                 <rect key="frame" x="120" y="55" width="134" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -915,7 +915,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmM-7b-yiK">
                                         <rect key="frame" x="8" y="33" width="32" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" image="Side_Bar_Button"/>
+                                        <state key="normal" title="Button" image="sideMenuButton"/>
                                         <connections>
                                             <segue destination="sqh-hP-u1d" kind="presentation" id="35a-Oj-m7y"/>
                                         </connections>
@@ -974,7 +974,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-KE-Ewd">
                                 <rect key="frame" x="156" y="577" width="63" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Plus_Button"/>
+                                <state key="normal" title="Button" image="plusButton"/>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ieB-7r-Cts">
                                 <rect key="frame" x="0.0" y="121" width="375" height="546"/>
@@ -1299,18 +1299,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Plus_Button" width="456" height="456"/>
-        <image name="Side_Bar_Button" width="283" height="259"/>
         <image name="background" width="375" height="667"/>
         <image name="centerOnUserButton" width="238" height="237"/>
-        <image name="house" width="800" height="756"/>
+        <image name="plusButton" width="456" height="456"/>
         <image name="profilePicTemplate" width="360" height="360"/>
         <image name="settingsGear" width="200" height="200"/>
+        <image name="sideMenuButton" width="283" height="259"/>
         <image name="white" width="26" height="26"/>
+        <image name="whiteHouse" width="800" height="756"/>
         <image name="whitearrow" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xO6-4G-MmM"/>
+        <segue reference="9uM-kz-Mlg"/>
         <segue reference="4U6-ia-G19"/>
     </inferredMetricsTieBreakers>
 </document>

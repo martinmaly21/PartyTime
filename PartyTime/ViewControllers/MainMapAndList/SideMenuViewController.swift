@@ -9,19 +9,19 @@
 import UIKit
 
 class SideMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var Menu: UITableView!
+    @IBOutlet weak var menu: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var uniLabel: UILabel!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpImageView()
-        Menu.separatorColor = UIColor.gray
-
+        menu.separatorColor = UIColor.gray
+        
         // Do any additional setup after loading the view.
     }
     

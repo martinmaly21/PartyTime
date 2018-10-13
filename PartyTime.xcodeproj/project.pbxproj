@@ -101,7 +101,6 @@
 			children = (
 				506C8E04213F2EA0005995DE /* ResetPasswordViewController.swift */,
 				501EADE721303B93004885AB /* LogInViewController.swift */,
-				50158CC521728030004679EF /* SideMenuViewController.swift */,
 			);
 			path = LoginViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				503F9F52216ED7FC003C5386 /* HomeViewController.swift */,
+				50158CC521728030004679EF /* SideMenuViewController.swift */,
 			);
 			path = MainMapAndList;
 			sourceTree = "<group>";
