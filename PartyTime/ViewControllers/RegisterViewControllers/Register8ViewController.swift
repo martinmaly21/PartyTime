@@ -36,8 +36,8 @@ class Register8ViewController: UIViewController {
     }
     
     func makeImageViewRound() {
-        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2
-        self.profileImageView.clipsToBounds = true
+        profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width / 2
+        profileImageView.clipsToBounds = true
     }
     
     

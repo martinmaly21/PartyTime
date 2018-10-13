@@ -6,10 +6,12 @@ target 'PartyTime' do
   use_frameworks!
 
   # Pods for PartyTime
+  # note, Hero Transitions will be added after the repo is updated
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-pod 'Hero'
 pod 'SideMenu'
+pod 'IQKeyboardManagerSwift'
+
 
 end
 

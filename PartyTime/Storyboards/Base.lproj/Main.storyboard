@@ -18,10 +18,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PartyTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="PartyTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="loginButton:" destination="HbL-lq-GSA" eventType="touchUpInside" id="y3Q-wX-uNd"/>
-                                    <segue destination="KFX-df-UpC" kind="show" identifier="logInToHome" id="qvF-QD-cUN"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="NR5-Lm-dAa">
@@ -218,6 +217,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="CJf-di-sIs" id="9Ff-m0-F2X"/>
                         <outlet property="passwordTextField" destination="a8m-gb-rb2" id="GeY-3e-UYd"/>
+                        <segue destination="KFX-df-UpC" kind="show" identifier="logInToHome" id="9uM-kz-Mlg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lDE-eH-JOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -313,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgU-Vz-7d8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="414" y="-2346"/>
+            <point key="canvasLocation" x="414" y="-2439"/>
         </scene>
         <!--Register1 View Controller-->
         <scene sceneID="sG1-pi-t3E">
@@ -924,6 +924,9 @@
                                         <rect key="frame" x="330" y="28" width="37" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="settingsGear"/>
+                                        <connections>
+                                            <action selector="settings:" destination="KFX-df-UpC" eventType="touchUpInside" id="RwK-c8-L2G"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PartyTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eII-g1-XQS">
                                         <rect key="frame" x="124" y="25" width="126" height="42"/>
@@ -985,6 +988,7 @@
                     <connections>
                         <outlet property="custNavBar" destination="jhT-St-3mT" id="KXA-yG-BVB"/>
                         <outlet property="mapView" destination="ieB-7r-Cts" id="m42-DU-dKV"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="homeToMain" animates="NO" id="hei-vH-pQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIv-9T-Ejg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1145,8 +1149,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="loginButton:" destination="HbL-lq-GSA" eventType="touchUpInside" id="U5e-Mq-fUg"/>
-                                    <segue destination="5de-1Q-jfg" kind="show" animates="NO" id="d9X-8g-rGh"/>
+                                    <segue destination="5de-1Q-jfg" kind="show" id="cnw-XR-sm4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TODO: Ask user for payment details using the stripe SDK." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-7j-o8e">
@@ -1234,20 +1237,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="wTc-gk-D9f">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nhd-ui-Iwa">
                                 <rect key="frame" x="0.0" y="240" width="375" height="427"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hv-il-Wga">
+                                <rect key="frame" x="16" y="12" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Martin Maly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="to5-mm-TC0">
+                                <rect key="frame" x="16" y="165" width="128" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Bold" family="DaxlinePro" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Queen's University" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaO-Am-JWg">
+                                <rect key="frame" x="16" y="197" width="144" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="DaxlinePro-Regular" family="DaxlinePro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cyan="0.86357545849999995" magenta="0.71482300759999995" yellow="0.47946059699999999" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Qo7-nt-apb"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Pzx-Z0-Hdg"/>
+                    <connections>
+                        <outlet property="menu" destination="nhd-ui-Iwa" id="kjL-k4-doI"/>
+                        <outlet property="nameLabel" destination="to5-mm-TC0" id="ClB-Re-AGR"/>
+                        <outlet property="profileImageView" destination="3hv-il-Wga" id="PW9-eA-cfg"/>
+                        <outlet property="uniLabel" destination="ZaO-Am-JWg" id="Vc5-LO-umH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fkF-E5-4cH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1287,7 +1310,7 @@
         <image name="whitearrow" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U72-ls-HCE"/>
+        <segue reference="xO6-4G-MmM"/>
         <segue reference="4U6-ia-G19"/>
     </inferredMetricsTieBreakers>
 </document>
