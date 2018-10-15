@@ -8,7 +8,7 @@ import UIKit
 import FirebaseAuth
 
 class LogInViewController: UIViewController {
-//I like idea of when both text fields are filled in, or atleast have some text in them, that the button changes from a lighter colour to a darker one. 
+    //I like idea of when both text fields are filled in, or atleast have some text in them, that the button changes from a lighter colour to a darker one. 
     
     
     enum LoginError: Error {
@@ -31,7 +31,7 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -39,12 +39,12 @@ class LogInViewController: UIViewController {
     @IBAction func loginButton(_ sender: UIButton) {
         
         do {
-          try login()
+            try login()
             
         } catch LoginError.incompleteForm {
             Alert.showBasictitle(title: "Error", message: "Please fill out both your password and email.", vc: self) }
         catch {
-           Alert.showBasictitle(title: "Error", message: "There was an error when attempting to log in.", vc: self)
+            Alert.showBasictitle(title: "Error", message: "There was an error when attempting to log in.", vc: self)
         }
     }
     
@@ -54,22 +54,22 @@ class LogInViewController: UIViewController {
         
         if email.isEmpty || password.isEmpty {
             throw LoginError.incompleteForm
-            }
+        }
         //Check to make sure password and email were correct.
-         //Perform login features
-
+        //Perform login features
+        
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if user != nil {
                 self.performSegue(withIdentifier: "logInToHome", sender: self)
             }
             if error != nil {
-            Alert.showBasictitle(title: "Error", message: "User failed to sign in. \(error!.localizedDescription)", vc: self)
-
+                Alert.showBasictitle(title: "Error", message: "User failed to sign in. \(error!.localizedDescription)", vc: self)
+                
             }
         }
-    
-
-}
+        
+        
+    }
     
     
 }

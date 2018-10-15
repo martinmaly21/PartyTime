@@ -11,7 +11,7 @@ import CoreLocation
 import Firebase
 
 class HomeViewController: UIViewController, UITableViewDelegate {
-
+    
     enum buttonPress {
         case map
         case list
@@ -20,16 +20,16 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
+
     let queensCoordinate = CLLocationCoordinate2D(latitude: 44.226233, longitude: -76.495609)
-    @IBOutlet weak var mapView: MKMapView!
     var listView: UITableView!
     let locationManager = CLLocationManager()
     var previousLocation: CLLocation?
     var lastPressedSegment: buttonPress = .map
     var canGetUsersLocation = false
     @IBOutlet weak var custNavBar: UIView!
-   
+    @IBOutlet weak var mapView: MKMapView!
+    
     
     @IBAction func settings(_ sender: Any) {
         //might make this a slide out menu too
@@ -39,7 +39,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         } catch {
             Alert.showBasictitle(title: "Error", message: "There was an error signing you out.", vc: self)
         }
-    
+        
     }
     
     @IBAction func centerOnUser(_ sender: Any) {
@@ -57,13 +57,13 @@ class HomeViewController: UIViewController, UITableViewDelegate {
                 mapCamera.heading = pointAtQueens(A: location, B: queensCoordinate)
                 mapView.setCamera(mapCamera, animated: true)
                 
-        } else {
-             Alert.showBasictitle(title: "Error", message: "Unable to get users current location.", vc: self)
+            } else {
+                Alert.showBasictitle(title: "Error", message: "Unable to get users current location.", vc: self)
+            }
         }
     }
-    }
     
-   
+    
     @IBAction func customSegmentValueChanged(_ sender: CustomSegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
@@ -72,30 +72,30 @@ class HomeViewController: UIViewController, UITableViewDelegate {
             } else {
                 
                 self.listView.removeFromSuperview()
-               
                 
                 
-            lastPressedSegment = .map
-            break
+                
+                lastPressedSegment = .map
+                break
             }
             
         case 1:
             if lastPressedSegment == .list {
-            break
+                break
             } else {
-      
+                
                 self.setUpListView()
-    
-            lastPressedSegment = .list
-            break
+                
+                lastPressedSegment = .list
+                break
             }
-
+            
         default:
-        //code will not execute
-        break
+            //code will not execute
+            break
         }
     }
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,12 +106,12 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     
     func setUpListView() {
         //EVENTUALLY THIS WILL BE CHANGED INTO A COLLECTION VIEW, FOR NOW IT'S OKAY
-          listView = UITableView(frame: CGRect(x: 0, y: view.frame.height - mapView.frame.height, width: view.frame.width, height: mapView.frame.height))
-            listView.backgroundColor = UIColor.lightGray
-            listView.separatorColor = UIColor.white
-            view.addSubview(listView)
+        listView = UITableView(frame: CGRect(x: 0, y: view.frame.height - mapView.frame.height, width: view.frame.width, height: mapView.frame.height))
+        listView.backgroundColor = UIColor.lightGray
+        listView.separatorColor = UIColor.white
+        view.addSubview(listView)
     }
-
+    
     func checkLocationServices() {
         //Check if system-wide location services are enabled
         if CLLocationManager.locationServicesEnabled() {
@@ -129,12 +129,12 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     }
     
     func centerViewOnUserLocation() {
-            //Code to center the view on the user's current location
-            mapView.mapType = .standard
-            mapView.showsBuildings = true
-            mapView.showsCompass = false
-            mapView.isPitchEnabled = false
-            mapView.isRotateEnabled = false
+        //Code to center the view on the user's current location
+        mapView.mapType = .standard
+        mapView.showsBuildings = true
+        mapView.showsCompass = false
+        mapView.isPitchEnabled = false
+        mapView.isRotateEnabled = false
         
         if let location = locationManager.location?.coordinate {
             let mapCamera = MKMapCamera()
@@ -145,7 +145,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
             mapView.setCamera(mapCamera, animated: true)
         }
     }
-
+    
     
     func pointAtQueens(A: CLLocationCoordinate2D, B: CLLocationCoordinate2D) -> CLLocationDirection {
         //This function returns a value (double) which is the degree value from facing the first paramater to the second
@@ -171,11 +171,11 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         case .authorizedWhenInUse:
             //This is what we want! Basically, the user has enabled location services for 'PartyTime' whenever the app is running.
             //Thus, run code to show user on the map.
-
+            
             startTrackingUsersLocation()
             canGetUsersLocation = true
             
-//            locationManager.startUpdatingLocation()
+            //            locationManager.startUpdatingLocation()
             break
         case .denied:
             //Occurs when user has already denied location services for the app
@@ -196,24 +196,19 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     func startTrackingUsersLocation() {
         mapView.showsUserLocation = true
         centerViewOnUserLocation()
-       // previousLocation = getCenterLocationmapv(for: mapView)
+        // previousLocation = getCenterLocationmapv(for: mapView)
         
     }
     
     
-//   func getCenterLocationmapv(for mapView: MKMapView) -> CLLocation {
-//
-//        let latitude = mapView.centerCoordinate.latitude
-//        let longitude = mapView.centerCoordinate.longitude
-//
-//    return CLLocation(latitude: latitude,longitude: longitude)
-//
-//    }
-    
-    
-    
-    
-
+    //   func getCenterLocationmapv(for mapView: MKMapView) -> CLLocation {
+    //
+    //        let latitude = mapView.centerCoordinate.latitude
+    //        let longitude = mapView.centerCoordinate.longitude
+    //
+    //    return CLLocation(latitude: latitude,longitude: longitude)
+    //
+    //    }
     
 }
 
@@ -222,17 +217,17 @@ class HomeViewController: UIViewController, UITableViewDelegate {
 extension HomeViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        //Code to update location depending on user changing
-//        guard let location = locations.last else { return }
-//        let center = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
-//        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
-//        mapView.setRegion(region, animated: true)
+        //        //Code to update location depending on user changing
+        //        guard let location = locations.last else { return }
+        //        let center = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
+        //        let region = MKCoordinateRegion.init(center: center, latitudinalMeters: regionInMeters, longitudinalMeters: regionInMeters)
+        //        mapView.setRegion(region, animated: true)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         //This function is called whenever the authorization permission changes
         //Thus we once again check the location authorization with the function we wrote previously.
-
+        
         checkLocationAuthorization()
     }
     

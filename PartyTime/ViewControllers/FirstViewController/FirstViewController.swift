@@ -9,15 +9,16 @@
 import UIKit
 import FirebaseAuth
 
-class FirstViewController: UIViewController {
 
+class FirstViewController: UIViewController {
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
     //TODO: Add onboarding screen to allow users to swipe through various screens explaining how PartyTime works. 
     
-   override func viewDidLoad() {
-    super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -44,5 +45,5 @@ class FirstViewController: UIViewController {
             }
         }
     }
-
+    
 }

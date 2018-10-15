@@ -14,47 +14,47 @@ class CustomSegmentedControl: UIControl {
     var buttons = [UIButton]()
     var selector: UIView!
     var selectedSegmentIndex = 0
-//@IBInspectable means whatever property comes next you will be able to see in attribute inspector (storyboard)
-@IBInspectable
+    //@IBInspectable means whatever property comes next you will be able to see in attribute inspector (storyboard)
+    @IBInspectable
     var borderWidth: CGFloat = 0 {
-    didSet {
-        layer.borderWidth = borderWidth
+        didSet {
+            layer.borderWidth = borderWidth
         }
-        }
+    }
     
-@IBInspectable
+    @IBInspectable
     var borderColour: UIColor = .white {
-    didSet {
-    layer.borderColor = borderColour.cgColor
+        didSet {
+            layer.borderColor = borderColour.cgColor
         }
-        }
+    }
     
-@IBInspectable
+    @IBInspectable
     var selectorColour: UIColor = .white {
-    didSet {
-        updateView()
-    }
-    }
-    
-@IBInspectable
-    var selectorTextColour: UIColor = .white {
-    didSet {
-        updateView()
-    }
-    }
-    
-@IBInspectable
-    var commaSeperatedButtonTitles: String = "" {
-    didSet {
-        updateView()
-    }
-    }
-
-@IBInspectable
-    var textColour: UIColor = .white {
-    didSet {
+        didSet {
             updateView()
+        }
     }
+    
+    @IBInspectable
+    var selectorTextColour: UIColor = .white {
+        didSet {
+            updateView()
+        }
+    }
+    
+    @IBInspectable
+    var commaSeperatedButtonTitles: String = "" {
+        didSet {
+            updateView()
+        }
+    }
+    
+    @IBInspectable
+    var textColour: UIColor = .white {
+        didSet {
+            updateView()
+        }
     }
     
     func updateView() {
@@ -78,11 +78,11 @@ class CustomSegmentedControl: UIControl {
         buttons[0].setTitleColor(selectorTextColour, for: .normal)
         
         
-       let selectorWidth = frame.width / CGFloat(buttonTitles.count)
-       selector = UIView(frame: CGRect(x: 0, y: 0, width: selectorWidth, height: frame.height))
-       selector.layer.cornerRadius = frame.height / 2
-       selector.backgroundColor = selectorColour
-       addSubview(selector)
+        let selectorWidth = frame.width / CGFloat(buttonTitles.count)
+        selector = UIView(frame: CGRect(x: 0, y: 0, width: selectorWidth, height: frame.height))
+        selector.layer.cornerRadius = frame.height / 2
+        selector.backgroundColor = selectorColour
+        addSubview(selector)
         
         
         let sv = UIStackView(arrangedSubviews: buttons)
@@ -112,18 +112,18 @@ class CustomSegmentedControl: UIControl {
             if btn == button {
                 selectedSegmentIndex = buttonIndex
                 let selectorStartPosition = frame.width / CGFloat(buttons.count) * CGFloat(buttonIndex)
-
+                
                 UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseInOut, animations: {
                     self.selector.frame.origin.x = selectorStartPosition
                 }, completion: nil)
                 
                 btn.setTitleColor(selectorTextColour, for: .normal)
-        
+                
+            }
+            
+            
+            
         }
-        
-        
-        
-    }
         sendActions(for: .valueChanged)
         
     }

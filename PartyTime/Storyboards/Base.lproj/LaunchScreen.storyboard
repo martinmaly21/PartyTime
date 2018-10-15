@@ -18,8 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteHouseWithText" translatesAutoresizingMaskIntoConstraints="NO" id="Ku5-yd-2LV">
-                                <rect key="frame" x="99" y="251" width="177" height="165"/>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whiteHouse" translatesAutoresizingMaskIntoConstraints="NO" id="Ku5-yd-2LV">
+                                <rect key="frame" x="109" y="98" width="157" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="partyTimeText" translatesAutoresizingMaskIntoConstraints="NO" id="vj0-so-Twd">
+                                <rect key="frame" x="116" y="262" width="147" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -33,6 +37,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="whiteHouseWithText" width="302" height="285"/>
+        <image name="partyTimeText" width="637" height="149"/>
+        <image name="whiteHouse" width="800" height="756"/>
     </resources>
 </document>

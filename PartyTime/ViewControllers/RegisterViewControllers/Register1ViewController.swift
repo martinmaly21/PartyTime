@@ -17,10 +17,10 @@ class Register1ViewController: UIViewController {
         case invalidPassword
         case passwordsDoNotMatch
         //MAYBE: CHECK FOR WIFI OR NOT??
-     
+        
     }
-        //TODO: Code for dismissing keyboard and adding return thing. 
-
+    //TODO: Code for dismissing keyboard and adding return thing. 
+    
     @IBOutlet weak var emailTextField: HoshiTextField!
     @IBOutlet weak var passwordTextField: HoshiTextField!
     @IBOutlet weak var confirmPasswordTextField: HoshiTextField!
@@ -28,12 +28,12 @@ class Register1ViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -65,10 +65,10 @@ class Register1ViewController: UIViewController {
             }
             if error != nil {
                 Alert.showBasictitle(title: "Error", message: "User failed to sign in \(error!.localizedDescription)", vc: self)
-                }
             }
         }
-        
+    }
+    
     
     
     @IBAction func registerAccount(_ sender: Any) {
@@ -83,7 +83,7 @@ class Register1ViewController: UIViewController {
         } catch registerErrors.invalidPassword {
             Alert.showBasictitle(title: "Error", message: "Invalid password! Please ensure your password contains atleast 8 characters, including at least one special character, one capital letter, and one number. ", vc: self)
         } catch {
-           Alert.showBasictitle(title: "Error", message: "Unfortunately we could not register your account at this time. Please try again at a later time.", vc: self)
+            Alert.showBasictitle(title: "Error", message: "Unfortunately we could not register your account at this time. Please try again at a later time.", vc: self)
         }
     }
     

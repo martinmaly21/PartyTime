@@ -13,12 +13,12 @@ class Register2ViewController: UIViewController {
     @IBOutlet weak var birthdayText: HoshiTextField!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBAction func datePicker(_ sender: UIDatePicker) {
- 
+        
         
         birthdayText.text = formatter.string(from: datePicker.date)
         
     }
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //Write code so that user can not pick date ahead of today's date
@@ -29,7 +29,7 @@ class Register2ViewController: UIViewController {
         birthdayText.text = formatter.string(from: datePicker.date)
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

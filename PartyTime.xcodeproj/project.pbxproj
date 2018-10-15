@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		50158C9C217130F9004679EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50158C9B217130F9004679EF /* GoogleService-Info.plist */; };
-		50158CA021716BD5004679EF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50158C9F21716BD5004679EF /* HomeTableViewController.swift */; };
 		50158CC621728030004679EF /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50158CC521728030004679EF /* SideMenuViewController.swift */; };
 		501EADE821303B93004885AB /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADE721303B93004885AB /* LogInViewController.swift */; };
 		501EADF021304DD2004885AB /* Register1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EADEF21304DD2004885AB /* Register1ViewController.swift */; };
@@ -33,6 +32,7 @@
 		508161E72167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 508161E62167B2A100C453B5 /* DaxlinePro-Bold_13127.ttf */; };
 		50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31742131C2BE009E81A3 /* HoshiTextField.swift */; };
 		50AE31822131C2BE009E81A3 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AE31772131C2BE009E81A3 /* TextFieldEffects.swift */; };
+		50D227952174F501002F6704 /* localNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D227942174F501002F6704 /* localNotification.swift */; };
 		C35F2A357E89039A1CBBF56C /* Pods_PartyTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,6 @@
 		0D21DF5B8E42587DF0061E06 /* Pods-PartyTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.release.xcconfig"; sourceTree = "<group>"; };
 		11F739EF5204764E7A2D71B4 /* Pods_PartyTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50158C9B217130F9004679EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		50158C9F21716BD5004679EF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = PartyTime/HelpfulClasses/HomeTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		50158CC521728030004679EF /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuViewController.swift; path = PartyTime/ViewControllers/MainMapAndList/SideMenuViewController.swift; sourceTree = SOURCE_ROOT; };
 		501EADE721303B93004885AB /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = /Users/martinmaly/Desktop/PartyTime/PartyTime/ViewControllers/LogInViewController.swift; sourceTree = "<absolute>"; };
 		501EADEF21304DD2004885AB /* Register1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Register1ViewController.swift; path = PartyTime/ViewControllers/RegisterViewControllers/Register1ViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -69,6 +68,7 @@
 		50AE31742131C2BE009E81A3 /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		50AE31772131C2BE009E81A3 /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
 		50AE317D2131C2BE009E81A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D227942174F501002F6704 /* localNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localNotification.swift; sourceTree = "<group>"; };
 		856E0F40641E4210E4E7B747 /* Pods-PartyTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTime/Pods-PartyTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,10 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				50350D10212AF93000E17C7E /* AppDelegate.swift */,
+				50D227942174F501002F6704 /* localNotification.swift */,
 				502F772721323FB400C81E81 /* AlertClass.swift */,
 				503F9F56216F2F47003C5386 /* CustomSegmentedControl.swift */,
 				502F772521323C6700C81E81 /* UniversityEmailValidator.swift */,
-				50158C9F21716BD5004679EF /* HomeTableViewController.swift */,
 			);
 			path = HelpfulClasses;
 			sourceTree = "<group>";
@@ -351,12 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D227952174F501002F6704 /* localNotification.swift in Sources */,
 				50502A56213754760025E014 /* Register4ViewController.swift in Sources */,
 				50350D13212AF93000E17C7E /* FirstViewController.swift in Sources */,
 				501EADE821303B93004885AB /* LogInViewController.swift in Sources */,
 				50AE317F2131C2BE009E81A3 /* HoshiTextField.swift in Sources */,
 				50158CC621728030004679EF /* SideMenuViewController.swift in Sources */,
-				50158CA021716BD5004679EF /* HomeTableViewController.swift in Sources */,
 				503F9F57216F2F47003C5386 /* CustomSegmentedControl.swift in Sources */,
 				50502A54213754690025E014 /* Register3ViewController.swift in Sources */,
 				503F9F53216ED7FC003C5386 /* HomeViewController.swift in Sources */,
