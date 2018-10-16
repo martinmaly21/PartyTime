@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 import CoreLocation
-import Firebase
+import FirebaseAuth
 
 class HomeViewController: UIViewController, UITableViewDelegate {
     
@@ -33,11 +33,14 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     
     @IBAction func settings(_ sender: Any) {
         //might make this a slide out menu too
+        
+        if Auth.auth().currentUser != nil {
         do {
             try Auth.auth().signOut()
-            performSegue(withIdentifier: "homeToMain", sender: self)
+            performSegue(withIdentifier: "homeToMain" , sender: self)
         } catch {
             Alert.showBasictitle(title: "Error", message: "There was an error signing you out.", vc: self)
+        }
         }
         
     }
@@ -62,6 +65,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
             }
         }
     }
+    
     
     
     @IBAction func customSegmentValueChanged(_ sender: CustomSegmentedControl) {

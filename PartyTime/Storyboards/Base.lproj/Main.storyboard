@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="PartyTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstView" id="BYZ-38-t0r" customClass="FirstViewController" customModule="PartyTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="KFX-df-UpC" kind="show" identifier="mainToHome" id="xO6-4G-MmM"/>
+                        <segue destination="KFX-df-UpC" kind="show" identifier="mainToHome" animates="NO" id="xO6-4G-MmM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -203,6 +203,9 @@
                                 <state key="normal" title="Don't have an account? Sign up. ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QKZ-ve-232" kind="show" animates="NO" id="Hfm-ue-Rkf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.15319555997848511" green="0.17959886789321899" blue="0.22353601455688477" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -903,7 +906,7 @@
         <!--PartyTime-->
         <scene sceneID="yUC-O4-vcq">
             <objects>
-                <viewController id="KFX-df-UpC" customClass="HomeViewController" customModule="PartyTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeView" id="KFX-df-UpC" customClass="HomeViewController" customModule="PartyTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGx-Q5-CZi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -988,7 +991,7 @@
                     <connections>
                         <outlet property="custNavBar" destination="jhT-St-3mT" id="KXA-yG-BVB"/>
                         <outlet property="mapView" destination="ieB-7r-Cts" id="m42-DU-dKV"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="homeToMain" animates="NO" id="hei-vH-pQE"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="homeToMain" id="IfP-Sp-ppa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIv-9T-Ejg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1320,7 +1323,9 @@
         <image name="whitearrow" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="IfP-Sp-ppa"/>
         <segue reference="xO6-4G-MmM"/>
+        <segue reference="yvh-W0-Kv1"/>
         <segue reference="4U6-ia-G19"/>
     </inferredMetricsTieBreakers>
 </document>

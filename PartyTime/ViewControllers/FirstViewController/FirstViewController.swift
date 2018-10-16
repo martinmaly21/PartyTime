@@ -21,6 +21,11 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         //checkIfUserSignedIn()
@@ -34,16 +39,7 @@ class FirstViewController: UIViewController {
     @IBAction func registerButton(_ sender: Any) {
         //TODO: Put code here if we want to perform any checks before user registers.
     }
+
     
-    
-    
-    
-    func checkIfUserSignedIn() {
-        Auth.auth().addStateDidChangeListener { (auth, user) in
-            if user != nil {
-                self.performSegue(withIdentifier: "mainToHome", sender: self)
-            }
-        }
-    }
     
 }

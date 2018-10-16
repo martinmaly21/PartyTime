@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import IQKeyboardManagerSwift
 import UserNotifications
+import MapKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -30,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
         FirebaseApp.configure()
         IQKeyboardManager.shared.enable = true
+        checkIfUserSignedIn()
         askUserForNotificationPermission()
         
         return true
@@ -57,6 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
+    
     func askUserForNotificationPermission() {
         
         UNUserNotificationCenter.current().delegate = self
@@ -67,14 +70,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 print(error!)
             } else if granted {
                 //Handle user allowing notifications
-                print("User notification status: \(granted)")
+//                print("User notification status: \(granted)")
             } else {
                 //Not too sure if anything is even going to go here.
             }
         }
-       
+    }
+
+    
+    func checkIfUserSignedIn() {
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            
+            let bounds = UIScreen.main.bounds
+            self.window = UIWindow(frame: bounds)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+            if user != nil {
+                //App should launch to home view
+                
+                let homeView = storyboard.instantiateViewController(withIdentifier: "homeView")
+                self.window?.rootViewController = homeView
+                
+            } else {
+                //App should launch to first view
+                
+                let firstView = storyboard.instantiateViewController(withIdentifier: "firstView")
+                self.window?.rootViewController = firstView
+                
+            }
+            self.window?.makeKeyAndVisible()
+        }
     }
 
 }
-
