@@ -7,11 +7,14 @@ target 'PartyTime' do
 
   # Pods for PartyTime
   # note, Hero Transitions will be added after the repo is updated
-pod 'Firebase/Core'
-pod 'Firebase/Auth'
 pod 'SideMenu'
 pod 'IQKeyboardManagerSwift'
-
-
+pod 'Mapbox-iOS-SDK'
+pod 'Hero'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Messaging'
+pod 'GoogleAppMeasurement', '~> 5.2.0'
+# remember firebase/instance ID was updated for some reason? try to find output and then see what it was updated to
 end
 

@@ -9,8 +9,11 @@ import UIKit
 import MapKit
 import CoreLocation
 import FirebaseAuth
+import Mapbox
 
 class HomeViewController: UIViewController, UITableViewDelegate {
+    
+    //TODO: If user is not close to queens. i.e. maybe get distance from user to queens and then compare it to a set distance. (if distance > 1km from center of queens then let mapview be = to queens coordinate", however, im not sure how this would be implemeneted for the get current locatoin button 
     
     enum buttonPress {
         case map
@@ -28,11 +31,18 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     var lastPressedSegment: buttonPress = .map
     var canGetUsersLocation = false
     @IBOutlet weak var custNavBar: UIView!
+   
+    //Note if i want this mapView to be from mapbox, 'mapView' must be of type "MGLMapView!"
     @IBOutlet weak var mapView: MKMapView!
+    
+    
+    
     
     
     @IBAction func settings(_ sender: Any) {
         //might make this a slide out menu too
+
+        
         
         if Auth.auth().currentUser != nil {
         do {
@@ -108,6 +118,23 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+    func testOutNewMapView() {
+        
+//        let url = URL(string: "mapbox://styles/mapbox/streets-v10")
+//        let mapView = MGLMapView(frame: view.bounds, styleURL: url)
+//        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        mapView.setCenter(CLLocationCoordinate2D(latitude: 59.31, longitude: 18.06), zoomLevel: 9, animated: false)
+//        let camera = mapView.camera
+//        camera.pitch = 60
+//        mapView.setCamera(camera, animated: true)
+//        view.addSubview(mapView)
+        
+    }
+    
+    
+    
+    
+    
     func setUpListView() {
         //EVENTUALLY THIS WILL BE CHANGED INTO A COLLECTION VIEW, FOR NOW IT'S OKAY
         listView = UITableView(frame: CGRect(x: 0, y: view.frame.height - mapView.frame.height, width: view.frame.width, height: mapView.frame.height))
@@ -132,7 +159,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
-    func centerViewOnUserLocation() {
+    func setUpMapAndCenterOnUserLocation() {
         //Code to center the view on the user's current location
         mapView.mapType = .standard
         mapView.showsBuildings = true
@@ -199,7 +226,7 @@ class HomeViewController: UIViewController, UITableViewDelegate {
     
     func startTrackingUsersLocation() {
         mapView.showsUserLocation = true
-        centerViewOnUserLocation()
+        setUpMapAndCenterOnUserLocation()
         // previousLocation = getCenterLocationmapv(for: mapView)
         
     }

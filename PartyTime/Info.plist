@@ -21,7 +21,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Please enable your location to find all the parties near you!</string>
+	<string>Enabling your location allows us to find you the best parties at your school.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>DaxlinePro-Bold_13127.ttf</string>
@@ -50,5 +50,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoibWFydGlubWFseSIsImEiOiJjam5jdDZuZXkwNWx3M3ZsZjU4bmFqbnZkIn0.o8Wn2Im0e9J9QssaqP0X1g</string>
 </dict>
 </plist>
