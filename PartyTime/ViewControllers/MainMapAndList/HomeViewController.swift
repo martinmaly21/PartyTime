@@ -13,7 +13,7 @@ import Mapbox
 
 class HomeViewController: UIViewController, UITableViewDelegate {
     
-    //TODO: If user is not close to queens. i.e. maybe get distance from user to queens and then compare it to a set distance. (if distance > 1km from center of queens then let mapview be = to queens coordinate", however, im not sure how this would be implemeneted for the get current locatoin button 
+    //TODO: If user is not close to queens. i.e. maybe get distance from user to queens and then compare it to a set distance. (if distance > 1km from center of queens then let mapview be = to queens coordinate", however, im not sure how this would be implemeneted for the get current locatoin button
     
     enum buttonPress {
         case map

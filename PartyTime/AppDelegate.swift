@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 import FirebaseMessaging
-import FirebaseInstanceID
 import IQKeyboardManagerSwift
 import UserNotifications
 import MapKit
@@ -87,7 +86,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if error != nil {
                 //Handle Error
-                print(error!)
+                print("Error: \(error!.localizedDescription)")
             } else if granted {
                 //Handle user allowing notifications
                 UNUserNotificationCenter.current().delegate = self
